@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX Developers, The IPSUM Developers
+// Copyright (c) Midas Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,11 +55,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000539394733b9adbc17f016f64806c9a87e7e6ee55d31710ff02bac750db3"));
+    (0, uint256("0x000005215156447e2f6b170a1f959df6a4af3efc768c35ee99984680c29830ac"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1523952000, // * UNIX timestamp of last checkpoint block
-    1,    // * total number of transactions between genesis and last checkpoint
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
 };
@@ -67,7 +68,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1454124731,
+    1523952000,
     0,
     250};
 
@@ -75,7 +76,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1454124731,
+    1523952000,
     0,
     100};
 
@@ -86,51 +87,52 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        nDefaultPort = 22331;
+        nDefaultPort = 44444;
 
         pchMessageStart[0] = 0xb1;
         pchMessageStart[1] = 0x2a;
         pchMessageStart[2] = 0xa3;
         pchMessageStart[3] = 0xe2;
-        vAlertPubKey = ParseHex("04a70f39e0e882a8ce2a8e1ea475f457e0351e17f587c96106651e7847685535ac80dd924d8491c3c88add169f01589c7609fc8c2f0603ea41d536eaee7c09ae0b");
+        vAlertPubKey = ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8");
         
         bnProofOfWorkLimit = ~uint256(0) >> 20;
-        nSubsidyHalvingInterval = 210000;
+        nSubsidyHalvingInterval = 105000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60;
-        nTargetSpacing = 1 * 60;
+        nTargetTimespan = 2 * 60;
+        nTargetSpacing = 2 * 60;
         nLastPOWBlock = 100;
         nMaturity = 20;
         nMasternodeCountDrift = 30;
         nModifierUpdateBlock = 1;
-        nMaxMoneyOut = 21000000 * COIN;
+        nMaxMoneyOut = 5000000 * COIN;
 
-        const char* pszTimestamp = "Lorem Ipsum is simply dummy text of the printing and typesetting industry, 2018-04-17";
+        const char* pszTimestamp = "Midas coin created at 11/08/2017 by HaZZarDt";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04a1c75be2f084b62a43d1500e7a8b85e087f4263ea9adb6f5baad278822afd999cf1f3a601e61865a45712c89e74aa189f4403bdc05d5144a05a1366b88bf9060") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1523952000;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 20624114;
+        genesis.nNonce = 74833;
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x00000539394733b9adbc17f016f64806c9a87e7e6ee55d31710ff02bac750db3"));
-        assert(genesis.hashMerkleRoot == uint256("0x130d46044fe5feec1216b7f7fbe5bcf88eb89f21549e8e1737b6a509002e85e5"));
+        assert(hashGenesisBlock == uint256("0x000005215156447e2f6b170a1f959df6a4af3efc768c35ee99984680c29830ac"));
+        assert(genesis.hashMerkleRoot == uint256("0x52ff0fa38c386c286eaf5777d3df6bebc156bc40dba484a4013f463a7ffb1ac9"));
 
-        vSeeds.push_back(CDNSSeedData("dnsseed1", "159.65.119.180"));
-        vSeeds.push_back(CDNSSeedData("dnsseed2", "159.89.6.25"));
+        // vSeeds.push_back(CDNSSeedData("dnsseed1", "159.65.119.180"));
+        // vSeeds.push_back(CDNSSeedData("dnsseed2", "159.89.6.25"));
+        vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 38);
@@ -175,7 +177,7 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        nDefaultPort = 22333;
+        nDefaultPort = 44441;
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -197,7 +199,7 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        nDefaultPort = 22335;
+        nDefaultPort = 44442;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
@@ -216,7 +218,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 22337;
+        nDefaultPort = 44443;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const

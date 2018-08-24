@@ -539,7 +539,7 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(ips_locale);
+    Q_INIT_RESOURCE(midas_locale);
     Q_INIT_RESOURCE(midas);
 
     BitcoinApplication app(argc, argv);

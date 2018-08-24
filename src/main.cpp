@@ -1602,21 +1602,27 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 2 * COIN;
 
     if (nHeight == 0) {
-      nSubsidy = 250000 * COIN;
-    } else if (nHeight > 0 && nHeight <= 3000) {
+      nSubsidy = 100000 * COIN;
+    } else if (nHeight > 0 && nHeight <= 10000) {
+      nSubsidy = 40 * CENT;
+    } else if (nHeight > 10000 && nHeight <= 25000) {
+      nSubsidy = 140 * CENT;
+    } else if (nHeight > 25000 && nHeight <= 50000) {
+      nSubsidy = 180 * CENT;
+    } else if (nHeight > 50000 && nHeight <= 75000) {
+      nSubsidy = 160 * CENT;
+    } else if (nHeight > 75000 && nHeight <= 100000) {
+      nSubsidy = 140 * CENT;
+    } else if (nHeight > 100000 && nHeight <= 150000) {
+      nSubsidy = 120 * CENT;
+    } else if (nHeight > 150000 && nHeight <= 200000) {
       nSubsidy = 1 * COIN;
-    } else if (nHeight > 3000 && nHeight <= 43200) {
-      nSubsidy = 125 * COIN;
-    } else if (nHeight > 43200 && nHeight <= 86400) {
-      nSubsidy = 145 * COIN;
-    } else if (nHeight > 86400 && nHeight <= 108000) {
-      nSubsidy = 72 * COIN;
-    } else if (nHeight > 108000 && nHeight <= 129600) {
-      nSubsidy = 36 * COIN;
-    } else if (nHeight > 129600 && nHeight <= 151200) {
-      nSubsidy = 18 * COIN;
-    } else if (nHeight > 151200) {
-      nSubsidy = 9 * COIN;
+    } else if (nHeight > 200000 && nHeight <= 250000) {
+      nSubsidy = 80 * CENT;
+    } else if (nHeight > 250000 && nHeight <= 500000) {
+      nSubsidy = 60 * CENT;
+    } else if (nHeight > 500000) {
+      nSubsidy = 40 * CENT;
     }
 
     return nSubsidy;
@@ -1626,7 +1632,50 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-    ret = blockValue / 10 * 7;
+    if (nHeight > 5 && nHeight <= 10000) {
+      nSubsidy = 160 * CENT;
+    } else if (nHeight > 10000 && nHeight <= 25000) {
+      nSubsidy = 560 * CENT;
+    } else if (nHeight > 25000 && nHeight <= 50000) {
+      nSubsidy = 720 * CENT;
+    } else if (nHeight > 50000 && nHeight <= 75000) {
+      nSubsidy = 6 * COIN;
+    } else if (nHeight > 75000 && nHeight <= 100000) {
+      nSubsidy = 525 * CENT;
+    } else if (nHeight > 100000 && nHeight <= 150000) {
+      nSubsidy = 450 * CENT;
+    } else if (nHeight > 150000 && nHeight <= 200000) {
+      nSubsidy = 375 * CENT;
+    } else if (nHeight > 200000 && nHeight <= 250000) {
+      nSubsidy = 3 * COIN;
+    } else if (nHeight > 250000 && nHeight <= 500000) {
+      nSubsidy = 225 * CENT;
+    } else if (nHeight > 500000) {
+      nSubsidy = 150 * CENT;
+    }
+
+    return ret;
+}
+
+int64_t GetDevFee(int nHeight)
+{
+    int64_t ret = 0;
+
+    if (nHeight > 50000 && nHeight <= 75000) {
+      nSubsidy = 40 * CENT;
+    } else if (nHeight > 75000 && nHeight <= 100000) {
+      nSubsidy = 35 * CENT;
+    } else if (nHeight > 100000 && nHeight <= 150000) {
+      nSubsidy = 30 * CENT;
+    } else if (nHeight > 150000 && nHeight <= 200000) {
+      nSubsidy = 25 * CENT;
+    } else if (nHeight > 200000 && nHeight <= 250000) {
+      nSubsidy = 20 * CENT;
+    } else if (nHeight > 250000 && nHeight <= 500000) {
+      nSubsidy = 15 * CENT;
+    } else if (nHeight > 500000) {
+      nSubsidy = 10 * CENT;
+    }
 
     return ret;
 }
