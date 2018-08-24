@@ -2,6 +2,9 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +23,7 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(Ips);
+    unitlist.append(Midas);
     unitlist.append(mIps);
     unitlist.append(uIps);
     return unitlist;
@@ -29,7 +32,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case Ips:
+    case Midas:
     case mIps:
     case uIps:
         return true;
@@ -41,8 +44,8 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case Ips:
-        return QString("ips");
+    case Midas:
+        return QString("midas");
     case mIps:
         return QString("mips");
     case uIps:
@@ -56,18 +59,18 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case Ips:
-            return QString("Ips");
+        case Midas:
+            return QString("Midas");
         case mIps:
             return QString("mIps");
         case uIps:
-            return QString::fromUtf8("μIps");
+            return QString::fromUtf8("μMidas");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case Ips:
+        case Midas:
             return QString("tIps");
         case mIps:
             return QString("mtIps");
@@ -83,18 +86,18 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case Ips:
-            return QString("Ips");
+        case Midas:
+            return QString("Midas");
         case mIps:
-            return QString("Milli-Ips (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-Midas (1 / 1" THIN_SP_UTF8 "000)");
         case uIps:
-            return QString("Micro-Ips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-Midas (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case Ips:
+        case Midas:
             return QString("TestIpss");
         case mIps:
             return QString("Milli-TestIps (1 / 1" THIN_SP_UTF8 "000)");
@@ -109,7 +112,7 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case Ips:
+    case Midas:
         return 100000000;
     case mIps:
         return 100000;
@@ -123,7 +126,7 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case Ips:
+    case Midas:
         return 8;
     case mIps:
         return 5;

@@ -3,6 +3,9 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,8 +28,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Ips (http://ips.io),
- * which enables instant payments to anyone, anywhere in the world. IPS uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Midas (http://midas.io),
+ * which enables instant payments to anyone, anywhere in the world. Midas uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -65,18 +68,18 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/ips.conf are parsed in qt/ips.cpp's main()
+    // If Qt is used, parameters/midas.conf are parsed in qt/midas.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Ips Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Midas Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  ipsd [options]                     " + _("Start Ips Daemon") + "\n";
+                        "  midasd [options]                     " + _("Start Midas Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -112,17 +115,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "ips:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "midas:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in ipsd anymore. Use the ips-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in midasd anymore. Use the midas-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "IPS server starting\n");
+            fprintf(stdout, "Midas server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -175,7 +178,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect ipsd signal handlers
+    // Connect midasd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

@@ -164,6 +164,6 @@
     </message>
     </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     </context>
 </TS>

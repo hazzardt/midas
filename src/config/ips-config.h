@@ -1,5 +1,5 @@
-/* src/config/ips-config.h.  Generated from ips-config.h.in by configure.  */
-/* src/config/ips-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/midas-config.h.  Generated from midas-config.h.in by configure.  */
+/* src/config/midas-config.h.in.  Generated from configure.ac by autoheader.  */
 
 #ifndef Ips_CONFIG_H
 
@@ -268,16 +268,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "ips.io"
+#define PACKAGE_BUGREPORT "midas.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Ips Core"
+#define PACKAGE_NAME "Midas Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Ips Core 1.0.0"
+#define PACKAGE_STRING "Midas Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "ips"
+#define PACKAGE_TARNAME "midas"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""

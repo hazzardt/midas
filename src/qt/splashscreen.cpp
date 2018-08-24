@@ -2,6 +2,9 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -34,12 +37,12 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     float fontFactor = 1.0;
 
     // define text to place
-    QString titleText = tr("Ips");
+    QString titleText = tr("Midas");
     QString versionText = QString(tr("Version %1")).arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightTextBtc = QChar(0xA9) + QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
     QString copyrightTextDash = QChar(0xA9) + QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Dash Core developers"));
     QString copyrightTextPIVX = QChar(0xA9) + QString(" 2015-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The PIVX Core developers"));
-    QString copyrightTextIPS = QChar(0xA9) + QString(" %1 ").arg(COPYRIGHT_YEAR) + QString(tr("The IPS developers"));
+    QString copyrightTextIPS = QChar(0xA9) + QString(" %1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Midas developers"));
     QString titleAddText = networkStyle->getTitleAddText();
 
     QString font = QApplication::font().toString();

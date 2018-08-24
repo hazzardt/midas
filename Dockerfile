@@ -25,21 +25,21 @@ RUN add-apt-repository ppa:bitcoin/bitcoin && \
           libminiupnpc-dev && \
           rm -rf /var/lib/apt/lists/* && apt-get clean
 
-WORKDIR /ips
+WORKDIR /midas
 
 COPY . .
 
 RUN ./autogen.sh && \
     ./configure && \
     make && \
-    strip src/ipsd && \
-    strip src/ips-cli && \
-    mv src/ipsd /usr/local/bin/ && \
-    mv src/ips-cli /usr/local/bin/ && \
-    rm -rf /ips 
+    strip src/midasd && \
+    strip src/midas-cli && \
+    mv src/midasd /usr/local/bin/ && \
+    mv src/midas-cli /usr/local/bin/ && \
+    rm -rf /midas 
 
-VOLUME ["/root/.ips"]
+VOLUME ["/root/.midas"]
 
 EXPOSE 22331
 
-CMD exec ipsd && tail -f /root/.ips/debug.log
+CMD exec midasd && tail -f /root/.midas/debug.log

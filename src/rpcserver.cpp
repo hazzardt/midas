@@ -3,6 +3,9 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -220,10 +223,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop IPS server.");
+            "\nStop Midas server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "IPS server stopping";
+    return "Midas server stopping";
 }
 
 
@@ -300,36 +303,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Ips features */
-        {"ips", "masternode", &masternode, true, true, false},
-        {"ips", "listmasternodes", &listmasternodes, true, true, false},
-        {"ips", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"ips", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"ips", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"ips", "masternodedebug", &masternodedebug, true, true, false},
-        {"ips", "startmasternode", &startmasternode, true, true, false},
-        {"ips", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"ips", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"ips", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"ips", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"ips", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"ips", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"ips", "mnbudget", &mnbudget, true, true, false},
-        {"ips", "preparebudget", &preparebudget, true, true, false},
-        {"ips", "submitbudget", &submitbudget, true, true, false},
-        {"ips", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"ips", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"ips", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"ips", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"ips", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"ips", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"ips", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"ips", "checkbudgets", &checkbudgets, true, true, false},
-        {"ips", "mnsync", &mnsync, true, true, false},
-        {"ips", "spork", &spork, true, true, false},
-        {"ips", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Midas features */
+        {"midas", "masternode", &masternode, true, true, false},
+        {"midas", "listmasternodes", &listmasternodes, true, true, false},
+        {"midas", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"midas", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"midas", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"midas", "masternodedebug", &masternodedebug, true, true, false},
+        {"midas", "startmasternode", &startmasternode, true, true, false},
+        {"midas", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"midas", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"midas", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"midas", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"midas", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"midas", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"midas", "mnbudget", &mnbudget, true, true, false},
+        {"midas", "preparebudget", &preparebudget, true, true, false},
+        {"midas", "submitbudget", &submitbudget, true, true, false},
+        {"midas", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"midas", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"midas", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"midas", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"midas", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"midas", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"midas", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"midas", "checkbudgets", &checkbudgets, true, true, false},
+        {"midas", "mnsync", &mnsync, true, true, false},
+        {"midas", "spork", &spork, true, true, false},
+        {"midas", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"ips", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"midas", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -594,7 +597,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use ipsd, or the -server option to ips-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use midasd, or the -server option to midas-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
                                                "rpcuser=ipsrpc\n"
@@ -603,7 +606,7 @@ void StartRPCThreads()
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"IPS Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Midas Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1054,7 +1057,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> ips-cli " + methodname + " " + args + "\n";
+    return "> midas-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -98,19 +98,19 @@ def parseline(line):
         'sortkey': sortkey,
     }
 
-def filtermultiport(ips):
+def filtermultiport(midas):
     '''Filter out hosts with more nodes per IP'''
     hist = collections.defaultdict(list)
-    for ip in ips:
+    for ip in midas:
         hist[ip['sortkey']].append(ip)
     return [value[0] for (key,value) in list(hist.items()) if len(value)==1]
 
 # Based on Greg Maxwell's seed_filter.py
-def filterbyasn(ips, max_per_asn, max_total):
-    # Sift out ips by type
-    ips_ipv4 = [ip for ip in ips if ip['net'] == 'ipv4']
-    ips_ipv6 = [ip for ip in ips if ip['net'] == 'ipv6']
-    ips_onion = [ip for ip in ips if ip['net'] == 'onion']
+def filterbyasn(midas, max_per_asn, max_total):
+    # Sift out midas by type
+    ips_ipv4 = [ip for ip in midas if ip['net'] == 'ipv4']
+    ips_ipv6 = [ip for ip in midas if ip['net'] == 'ipv6']
+    ips_onion = [ip for ip in midas if ip['net'] == 'onion']
 
     # Filter IPv4 by ASN
     result = []
@@ -138,30 +138,30 @@ def filterbyasn(ips, max_per_asn, max_total):
 
 def main():
     lines = sys.stdin.readlines()
-    ips = [parseline(line) for line in lines]
+    midas = [parseline(line) for line in lines]
 
     # Skip entries with valid address.
-    ips = [ip for ip in ips if ip is not None]
+    midas = [ip for ip in midas if ip is not None]
     # Skip entries from suspicious hosts.
-    ips = [ip for ip in ips if ip['ip'] not in SUSPICIOUS_HOSTS]
+    midas = [ip for ip in midas if ip['ip'] not in SUSPICIOUS_HOSTS]
     # Enforce minimal number of blocks.
-    ips = [ip for ip in ips if ip['blocks'] >= MIN_BLOCKS]
+    midas = [ip for ip in midas if ip['blocks'] >= MIN_BLOCKS]
     # Require service bit 1.
-    ips = [ip for ip in ips if (ip['service'] & 1) == 1]
+    midas = [ip for ip in midas if (ip['service'] & 1) == 1]
     # Require at least 50% 30-day uptime.
-    ips = [ip for ip in ips if ip['uptime'] > 50]
+    midas = [ip for ip in midas if ip['uptime'] > 50]
     # Require a known and recent user agent.
-    ips = [ip for ip in ips if PATTERN_AGENT.match(re.sub(' ', '-', ip['agent']))]
+    midas = [ip for ip in midas if PATTERN_AGENT.match(re.sub(' ', '-', ip['agent']))]
     # Sort by availability (and use last success as tie breaker)
-    ips.sort(key=lambda x: (x['uptime'], x['lastsuccess'], x['ip']), reverse=True)
+    midas.sort(key=lambda x: (x['uptime'], x['lastsuccess'], x['ip']), reverse=True)
     # Filter out hosts with multiple bitcoin ports, these are likely abusive
-    ips = filtermultiport(ips)
+    midas = filtermultiport(midas)
     # Look up ASNs and limit results, both per ASN and globally.
-    ips = filterbyasn(ips, MAX_SEEDS_PER_ASN, NSEEDS)
+    midas = filterbyasn(midas, MAX_SEEDS_PER_ASN, NSEEDS)
     # Sort the results by IP address (for deterministic output).
-    ips.sort(key=lambda x: (x['net'], x['sortkey']))
+    midas.sort(key=lambda x: (x['net'], x['sortkey']))
 
-    for ip in ips:
+    for ip in midas:
         if ip['net'] == 'ipv6':
             print('[%s]:%i' % (ip['ip'], ip['port']))
         else:

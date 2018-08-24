@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between ips-cli and ipsd)
- * of a given instance of the Ips system.
+ * CBaseChainParams defines the base parameters (shared between midas-cli and midasd)
+ * of a given instance of the Midas system.
  */
 class CBaseChainParams
 {

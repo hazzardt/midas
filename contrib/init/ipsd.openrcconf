@@ -1,25 +1,25 @@
-# /etc/conf.d/ipsd: config file for /etc/init.d/ipsd
+# /etc/conf.d/midasd: config file for /etc/init.d/midasd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/ips/ips.conf"
+#BITCOIND_CONFIGFILE="/etc/midas/midas.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/ipsd"
+#BITCOIND_PIDDIR="/var/run/midasd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ipsd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/midasd.pid"
 
-# Where to write ipsd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/ipsd"
+# Where to write midasd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/midasd"
 
-# User and group to own ipsd process
-#BITCOIND_USER="ips"
-#BITCOIND_GROUP="ips"
+# User and group to own midasd process
+#BITCOIND_USER="midas"
+#BITCOIND_GROUP="midas"
 
-# Path to ipsd executable
-#BITCOIND_BIN="/usr/bin/ipsd"
+# Path to midasd executable
+#BITCOIND_BIN="/usr/bin/midasd"
 
-# Nice value to run ipsd under
+# Nice value to run midasd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

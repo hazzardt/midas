@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Ips addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Midas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Ips addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Midas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Ips will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Ips&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a Ips Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Midas Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The Ips address to sign the message with</source>
+        <source>The Midas address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Ips address</source>
+        <source>Sign the message to prove you own this Midas address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The Ips address the message was signed with</source>
+        <source>The Midas address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified Ips address</source>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -771,17 +771,17 @@
     <message>
         <location line="-396"/>
         <location line="+831"/>
-        <source>Ips</source>
+        <source>Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-652"/>
-        <source>Send coins to a Ips address</source>
+        <source>Send coins to a Midas address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and ips: URIs)</source>
+        <source>Request payments (generates QR codes and midas: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -796,27 +796,27 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>&amp;About Ips</source>
+        <source>&amp;About Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Ips</source>
+        <source>Show information about Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for Ips</source>
+        <source>Modify configuration options for Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your Ips addresses to prove you own them</source>
+        <source>Sign messages with your Midas addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Ips addresses</source>
+        <source>Verify messages to ensure they were signed with specified Midas addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Open a Ips: URI or payment request</source>
+        <source>Open a Midas: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,17 +871,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Ips help message to get a list with possible Ips command-line options</source>
+        <source>Show the Midas help message to get a list with possible Midas command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+201"/>
-        <source>Ips client</source>
+        <source>Midas client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+190"/>
-        <source>%n active connection(s) to Ips network</source>
+        <source>%n active connection(s) to Midas network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1077,7 +1077,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+473"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ips.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (midas.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1456,7 +1456,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid Ips address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Midas address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1512,7 +1512,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Ips</source>
+        <source>Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1523,7 +1523,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About Ips</source>
+        <source>About Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1581,17 +1581,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Ips.</source>
+        <source>Welcome to Midas.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Ips will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Midas will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Ips will download and store a copy of the Ips block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Midas will download and store a copy of the Midas block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1606,7 +1606,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Ips</source>
+        <source>Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1782,8 +1782,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Ips addresses after it matures.
-To Add: enter percentage to give and Ips address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Midas addresses after it matures.
+To Add: enter percentage to give and Midas address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -1948,12 +1948,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Ips</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 Ips</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1963,12 +1963,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 Ips to anonymize 10000 Ips</source>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 Ips to anonymize 10000 Ips</source>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1978,7 +1978,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 Ips per 10000 Ips you anonymize.</source>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,17 +1990,17 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Ips&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Midas&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Ips&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Midas&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Ips&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Midas&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2076,7 +2076,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the Ips client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Midas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2101,12 +2101,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-179"/>
-        <source>Automatically start Ips after logging in to the system.</source>
+        <source>Automatically start Midas after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Ips on system login</source>
+        <source>&amp;Start Midas on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2126,7 +2126,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Amount of Ips to keep anonymized</source>
+        <source>Amount of Midas to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2161,7 +2161,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ips.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Midas.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2177,7 +2177,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the Ips network through a SOCKS5 proxy.</source>
+        <source>Connect to the Midas network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2374,7 +2374,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ips network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Midas network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2429,7 +2429,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>0 Ips / 0 Rounds</source>
+        <source>0 Midas / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2661,12 +2661,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start ips: click-to-pay handler</source>
+        <source>Cannot start midas: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Ips address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Midas address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a Ips address (e.g. %1)</source>
+        <source>Enter a Midas address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2969,7 +2969,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the Ips debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Midas debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3181,7 +3181,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the Ips RPC console.</source>
+        <source>Welcome to the Midas RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3272,12 +3272,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ips network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Midas network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Ips network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Midas network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3570,7 +3570,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 Ips</source>
+        <source>0 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3641,7 +3641,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Ips transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Midas transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3774,7 +3774,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+632"/>
-        <source>Warning: Invalid Ips address</source>
+        <source>Warning: Invalid Midas address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3918,7 +3918,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The Ips address to send the payment to</source>
+        <source>The Midas address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3972,7 +3972,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Ips: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ips network.</source>
+        <source>A message that was attached to the Midas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Midas network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4007,7 +4007,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>Ips is shutting down...</source>
+        <source>Midas is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4035,7 +4035,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The Ips address to sign the message with</source>
+        <source>The Midas address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4077,17 +4077,17 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Ips address</source>
+        <source>Sign the message to prove you own this Midas address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The Ips address the message was signed with</source>
+        <source>The Midas address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Ips address</source>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4202,7 +4202,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Ips</source>
+        <source>Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4222,7 +4222,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The Ips developers</source>
+        <source>The Midas developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4935,7 +4935,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 Ips.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 Midas.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4988,7 +4988,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
 </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     <message>
         <location filename="../ipsstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -5021,7 +5021,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. Ips is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Midas is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,7 +5046,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all Ips specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Midas specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5101,12 +5101,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in Ips/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in Ips/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5236,7 +5236,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use ipsd, or the -server option to ips-qt, you must set an rpcpassword in the configuration file:
+        <source>To use midasd, or the -server option to midas-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=ipsrpc
@@ -5245,13 +5245,13 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Midas Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Ips is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Midas is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5261,12 +5261,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 Ips.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 Midas.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 Ips.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 Midas.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5286,7 +5286,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ips will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Midas will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5476,7 +5476,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) %i The Ips Developers</source>
+        <source>Copyright (C) %i The Midas Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5566,7 +5566,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ips</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5631,7 +5631,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in Ips/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in Midas/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5706,7 +5706,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Ips is shutting down.</source>
+        <source>Initialization sanity check failed. Midas is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5846,7 +5846,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+53"/>
-        <source>Keep N Ips anonymized (default: %u)</source>
+        <source>Keep N Midas anonymized (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6481,7 +6481,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ips Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Ips to complete</source>
+        <source>Wallet needed to be rewritten: restart Midas to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

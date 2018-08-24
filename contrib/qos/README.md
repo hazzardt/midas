@@ -2,4 +2,4 @@
 
 This is a Linux bash script that will set up tc to limit the outgoing bandwidth for connections to the Bitcoin network. It limits outbound TCP traffic with a source or destination port of 22331, but not if the destination IP is within a LAN (defined as 192.168.x.x).
 
-This means one can have an always-on ipsd instance running, and another local ipsd/ips-qt instance which connects to this node and receives blocks from it.
+This means one can have an always-on midasd instance running, and another local midasd/midas-qt instance which connects to this node and receives blocks from it.

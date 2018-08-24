@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both ipsd and ips-qt, to make it harder for attackers to
+ * for both midasd and midas-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Ips");
+const std::string CLIENT_NAME("Midas");
 
 /**
  * Client version number

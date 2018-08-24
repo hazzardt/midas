@@ -46,10 +46,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Ips ips-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Midas midas-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  ips-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded ips transaction") + "\n" +
-                               "  ips-tx [options] -create [commands]   " + _("Create hex-encoded ips transaction") + "\n" +
+                               "  midas-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded midas transaction") + "\n" +
+                               "  midas-tx [options] -create [commands]   " + _("Create hex-encoded midas transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -550,7 +550,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded ips transaction
+            // param: hex-encoded midas transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

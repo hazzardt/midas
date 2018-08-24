@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your Ips addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše Ips adresy pro zaslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Midas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Midas adresy pro zaslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your Ips addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše Ips adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Midas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Midas adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,15 +176,15 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Ips will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>Ips se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše Ipsy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <translation>Midas se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše Ipsy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Ips&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE Ipsy&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrování</translation>
     </message>
     <message>
-        <source>Enter a Ips Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Ips adresu, kterou si přejete zašifrovat pomocí BIP 38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a Midas Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte Midas adresu, kterou si přejete zašifrovat pomocí BIP 38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Ips address to sign the message with</source>
-        <translation>Ips adresa pro podepsání zprávy</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>Midas adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ips address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Ips adresu</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Midas adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privátní klíč. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The Ips address the message was signed with</source>
-        <translation>Ips adresa zprávy byla podepsána</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>Midas adresa zprávy byla podepsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ips address</source>
-        <translation>Ověřte zprávu pro ujištění, že byla podepsána zmíněnou Ips adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
+        <translation>Ověřte zprávu pro ujištění, že byla podepsána zmíněnou Midas adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>Send coins to a Ips address</source>
-        <translation>Odeslat platbu na Ips adresu</translation>
+        <source>Send coins to a Midas address</source>
+        <translation>Odeslat platbu na Midas adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ips: URIs)</source>
-        <translation>Vyžádat platbu (generování QR kódu a ips: URIs)</translation>
+        <source>Request payments (generates QR codes and midas: URIs)</source>
+        <translation>Vyžádat platbu (generování QR kódu a midas: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Ips</source>
-        <translation>&amp;O Ips</translation>
+        <source>&amp;About Midas</source>
+        <translation>&amp;O Midas</translation>
     </message>
     <message>
-        <source>Show information about Ips</source>
-        <translation>Zobrazit informace o Ips</translation>
+        <source>Show information about Midas</source>
+        <translation>Zobrazit informace o Midas</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ips</source>
-        <translation>Upravit možnosti konfigurace pro Ips</translation>
+        <source>Modify configuration options for Midas</source>
+        <translation>Upravit možnosti konfigurace pro Midas</translation>
     </message>
     <message>
-        <source>Sign messages with your Ips addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší Ips adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Midas addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Midas adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ips addresses</source>
-        <translation>Ověřit zprávy k zajištění, že byly podepsány vybranými Ips adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Midas addresses</source>
+        <translation>Ověřit zprávy k zajištění, že byly podepsány vybranými Midas adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít konfigurační soubor Masternodu</translation>
     </message>
     <message>
-        <source>Open a Ips: URI or payment request</source>
-        <translation>Otevřít Ips: URI nebo platební žádost</translation>
+        <source>Open a Midas: URI or payment request</source>
+        <translation>Otevřít Midas: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno průzkumníka bloků</translation>
     </message>
     <message>
-        <source>Show the Ips help message to get a list with possible Ips command-line options</source>
-        <translation>Zobrazit Ips pomocnou zprávu pro získání seznamu možných parametrů Ips pro příkazy do příkazového řádku</translation>
+        <source>Show the Midas help message to get a list with possible Midas command-line options</source>
+        <translation>Zobrazit Midas pomocnou zprávu pro získání seznamu možných parametrů Midas pro příkazy do příkazového řádku</translation>
     </message>
     <message>
-        <source>Ips client</source>
-        <translation>Ips klient</translation>
+        <source>Midas client</source>
+        <translation>Midas klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ips.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (ips.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (midas.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (midas.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1070,8 +1070,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ips address.</source>
-        <translation>Zadaná adresa "%1" není validní Ips adresa.</translation>
+        <source>The entered address "%1" is not a valid Midas address.</source>
+        <translation>Zadaná adresa "%1" není validní Midas adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1116,12 +1116,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>About Ips</source>
-        <translation>O Ips</translation>
+        <source>About Midas</source>
+        <translation>O Midas</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1155,16 +1155,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Ips</source>
-        <translation>Vítejte v Ips</translation>
+        <source>Welcome to Midas</source>
+        <translation>Vítejte v Midas</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Ips will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Ips ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Midas will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Midas ukládat svá data.</translation>
     </message>
     <message>
-        <source>Ips will download and store a copy of the Ips block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Ips stáhne a uloží kopii Ips Blockchainu. Nejméně %1GB dat bude do této složky uložen a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Midas will download and store a copy of the Midas block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Midas stáhne a uloží kopii Midas Blockchainu. Nejméně %1GB dat bude do této složky uložen a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1175,8 +1175,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1442,24 +1442,24 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrověň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Ips</source>
-        <translation>Použít 2 oddělené masternody k promíchání prostředků až do 10000 Ips</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Použít 2 oddělené masternody k promíchání prostředků až do 10000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 Ips to anonymize 10000 Ips</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 Ips pro anonymizaci 10000 Ips</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 Midas pro anonymizaci 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejbezpečnější volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 Ips per 10000 Ips you anonymize.</source>
-        <translation>0.1 Ips za 10000 Ips, které anonymizujete.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>0.1 Midas za 10000 Midas, které anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1524,16 +1524,16 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Ips after logging in to the system.</source>
-        <translation>Automaticky spustit Ips po přihlášení do systému</translation>
+        <source>Automatically start Midas after logging in to the system.</source>
+        <translation>Automaticky spustit Midas po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Ips on system login</source>
-        <translation>&amp;Spustit Ips při přihlášení do systému</translation>
+        <source>&amp;Start Midas on system login</source>
+        <translation>&amp;Spustit Midas při přihlášení do systému</translation>
     </message>
     <message>
-        <source>Amount of Ips to keep anonymized</source>
-        <translation>Počet Ips pro anonymní držení</translation>
+        <source>Amount of Midas to keep anonymized</source>
+        <translation>Počet Midas pro anonymní držení</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1639,8 +1639,8 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Obfuskační Zůstatek:</translation>
     </message>
     <message>
-        <source>0 Ips / 0 Rounds</source>
-        <translation>0 Ips / 0 Kol</translation>
+        <source>0 Midas / 0 Rounds</source>
+        <translation>0 Midas / 0 Kol</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2066,8 +2066,8 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 Ips</source>
-        <translation>0 Ips</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2199,8 +2199,8 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Ips address to sign the message with</source>
-        <translation>Ips adresa pro podepsání zprávy</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>Midas adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2227,16 +2227,16 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ips address</source>
-        <translation>Podepsat zprávu k prokázání, že tuto Ips adresu vlastníte</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Podepsat zprávu k prokázání, že tuto Midas adresu vlastníte</translation>
     </message>
     <message>
-        <source>The Ips address the message was signed with</source>
-        <translation>Ips adresa zprávy, se kterou byla podpsána</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>Midas adresa zprávy, se kterou byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ips address</source>
-        <translation>Ověřte zprávu pro ujištění, že byla podepsána zmíněnou Ips adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
+        <translation>Ověřte zprávu pro ujištění, že byla podepsána zmíněnou Midas adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2278,8 +2278,8 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>
@@ -2382,7 +2382,7 @@ Prosím, zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

@@ -270,12 +270,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>&amp;About Ips</source>
-        <translation>&amp;Sobre Ips</translation>
+        <source>&amp;About Midas</source>
+        <translation>&amp;Sobre Midas</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -468,12 +468,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>About Ips</source>
-        <translation>Sobre Ips</translation>
+        <source>About Midas</source>
+        <translation>Sobre Midas</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -491,12 +491,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Ips</source>
-        <translation>Benvingut a Ips</translation>
+        <source>Welcome to Midas</source>
+        <translation>Benvingut a Midas</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1048,8 +1048,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1200,7 +1200,7 @@
     </message>
     </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

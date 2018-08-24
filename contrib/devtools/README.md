@@ -18,7 +18,7 @@ For example:
   ./github-merge.py 3077
 
 (in any git repository) will help you merge pull request #3077 for the
-ipsum-network/ips repository.
+ipsum-network/midas repository.
 
 What it does:
 * Fetch master and the pull request.
@@ -36,16 +36,16 @@ couldn't mess with the sources.
 
 Setup
 ---------
-Configuring the github-merge tool for the Ips repository is done in the following way:
+Configuring the github-merge tool for the Midas repository is done in the following way:
 
-    git config githubmerge.repository ipsum-network/ips
+    git config githubmerge.repository ipsum-network/midas
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
     git config --global user.signingkey mykeyid (if you want to GPG sign)
 
 optimize-pngs.py
 ================
 
-A script to optimize png files in the ips
+A script to optimize png files in the midas
 repository (requires pngcrush).
 
 fix-copyright-headers.py

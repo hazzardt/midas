@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: ipsd.service
-Upstart: ipsd.conf
-OpenRC:  ipsd.openrc
-         ipsd.openrcconf
-CentOS:  ipsd.init
+SystemD: midasd.service
+Upstart: midasd.conf
+OpenRC:  midasd.openrc
+         midasd.openrcconf
+CentOS:  midasd.init
 
 have been made available to assist packagers in creating node packages here.
 

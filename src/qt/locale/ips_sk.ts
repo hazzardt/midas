@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your IPS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše IPS adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your Midas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše Midas adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your IPS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše IPS adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your Midas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Midas adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>IPS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>IPS sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše Ips pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <translation>Midas sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše Midas pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Ips&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY Ips &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY Midas &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Ips Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Ips, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a Midas Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu Midas, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The IPS address to sign the message with</source>
-        <translation>Adresa IPS, ktorou chcete správu podpísať</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>Adresa Midas, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this IPS address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto IPS adresy</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Midas adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The IPS address the message was signed with</source>
-        <translation>IPS adresa, ktorou bola správa podpísaná</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>Midas adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified IPS address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou IPS adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Midas adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>Send coins to a IPS address</source>
-        <translation>Odoslať mince na adresu IPS</translation>
+        <source>Send coins to a Midas address</source>
+        <translation>Odoslať mince na adresu Midas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ips: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a ips: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and midas: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a midas: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Ips</source>
-        <translation>O Ips</translation>
+        <source>&amp;About Midas</source>
+        <translation>O Midas</translation>
     </message>
     <message>
-        <source>Show information about Ips</source>
-        <translation>Zobraziť informácie o Ips</translation>
+        <source>Show information about Midas</source>
+        <translation>Zobraziť informácie o Midas</translation>
     </message>
     <message>
-        <source>Modify configuration options for IPS</source>
-        <translation>Zmeňte možnosti konfigurácie pre IPS</translation>
+        <source>Modify configuration options for Midas</source>
+        <translation>Zmeňte možnosti konfigurácie pre Midas</translation>
     </message>
     <message>
-        <source>Sign messages with your IPS addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy IPS, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your Midas addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy Midas, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified IPS addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými IPS adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Midas addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Midas adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a IPS: URI or payment request</source>
-        <translation>Otvorte IPS: URI alebo žiadosť o platbu</translation>
+        <source>Open a Midas: URI or payment request</source>
+        <translation>Otvorte Midas: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Ips help message to get a list with possible IPS command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Ips a získajte zoznam možností príkazového riadka IPS</translation>
+        <source>Show the Midas help message to get a list with possible Midas command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Midas a získajte zoznam možností príkazového riadka Midas</translation>
     </message>
     <message>
-        <source>Ips client</source>
-        <translation>Ips klient</translation>
+        <source>Midas client</source>
+        <translation>Midas klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ips.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (ips.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (midas.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (midas.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -908,15 +908,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1093,8 +1093,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The IPS address to sign the message with</source>
-        <translation>Adresa IPS, ktorou chcete správu podpísať</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>Adresa Midas, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1117,16 +1117,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this IPS address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto IPS adresy</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Midas adresy</translation>
     </message>
     <message>
-        <source>The IPS address the message was signed with</source>
-        <translation>IPS adresa, ktorou bola správa podpísaná</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>Midas adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified IPS address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou IPS adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Midas adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1164,8 +1164,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>
@@ -1260,7 +1260,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

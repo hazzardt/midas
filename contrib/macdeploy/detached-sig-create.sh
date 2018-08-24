@@ -2,7 +2,7 @@
 set -e
 
 ROOTDIR=dist
-BUNDLE=${ROOTDIR}/Ips-Qt.app
+BUNDLE=${ROOTDIR}/Midas-Qt.app
 CODESIGN=codesign
 TEMPDIR=sign.temp
 TEMPLIST=${TEMPDIR}/signatures.txt

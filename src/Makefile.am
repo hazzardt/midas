@@ -64,15 +64,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += ipsd
+  bin_PROGRAMS += midasd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += ips-cli ips-tx
+  bin_PROGRAMS += midas-cli midas-tx
 endif
 
 .PHONY: FORCE
-# ips core #
+# midas core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -180,7 +180,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between ipsd and ips-qt
+# server: shared between midasd and midas-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -224,7 +224,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between ipsd and ips-qt, but only linked
+# wallet: shared between midasd and midas-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -305,7 +305,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between ipsd, and ips-qt and non-server tools
+# common: shared between midasd, and midas-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -361,7 +361,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between ips-cli and ips-qt
+# cli: shared between midas-cli and midas-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -388,11 +388,11 @@ endif
 if ENABLE_WALLET
 ipsd_LDADD += libbitcoin_wallet.a
 endif
-ipsd_SOURCES = ipsd.cpp
+ipsd_SOURCES = midasd.cpp
 #
 
 if TARGET_WINDOWS
-ipsd_SOURCES += ipsd-res.rc
+ipsd_SOURCES += midasd-res.rc
 endif
 
 ipsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
@@ -400,7 +400,7 @@ ipsd_CPPFLAGS = $(BITCOIN_INCLUDES)
 ipsd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# ips-cli binary #
+# midas-cli binary #
 ips_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
@@ -409,12 +409,12 @@ ips_cli_LDADD = \
   $(CRYPTO_LIBS)
 
 ips_cli_SOURCES = \
-  ips-cli.cpp
+  midas-cli.cpp
 
 ips_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# ips-tx binary #
+# midas-tx binary #
 ips_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
@@ -424,13 +424,13 @@ ips_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-ips_tx_SOURCES = ips-tx.cpp
+ips_tx_SOURCES = midas-tx.cpp
 ips_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 ips_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-ips_cli_SOURCES += ips-cli-res.rc
+ips_cli_SOURCES += midas-cli-res.rc
 endif
 ips_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 

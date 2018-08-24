@@ -3,6 +3,9 @@
 // Copyright (c) 2009-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -27,7 +30,7 @@ std::string HelpMessageCli()
     string strUsage;
     strUsage += HelpMessageGroup(_("Options:"));
     strUsage += HelpMessageOpt("-?", _("This help message"));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "ips.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "midas.conf"));
     strUsage += HelpMessageOpt("-datadir=<dir>", _("Specify data directory"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
     strUsage += HelpMessageOpt("-regtest", _("Enter regression test mode, which uses a special chain in which blocks can be "
@@ -68,12 +71,12 @@ static bool AppInitRPC(int argc, char* argv[])
     //
     ParseParameters(argc, argv);
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Ips RPC client version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Midas RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  ips-cli [options] <command> [params]  " + _("Send command to Ips") + "\n" +
-                        "  ips-cli [options] help                " + _("List commands") + "\n" +
-                        "  ips-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  midas-cli [options] <command> [params]  " + _("Send command to Midas") + "\n" +
+                        "  midas-cli [options] help                " + _("List commands") + "\n" +
+                        "  midas-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

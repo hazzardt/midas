@@ -1,6 +1,6 @@
 [Protocol]
-exec=ips-qt '%u'
-protocol=ips
+exec=midas-qt '%u'
+protocol=midas
 input=none
 output=none
 helper=true

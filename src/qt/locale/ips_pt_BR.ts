@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your IPS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços IPS para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your Midas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Midas para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your IPS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços IPS para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Midas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Midas para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>IPS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>IPS vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas Ipss de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <translation>Midas vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas Ipss de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Ips&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS Ips&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS Midas&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,7 +235,7 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a Ips Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Midas Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -243,8 +243,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The IPS address to sign the message with</source>
-        <translation>O endereço IPS para assinar a mensagem</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>O endereço Midas para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this IPS address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço IPS</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Midas</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -291,12 +291,12 @@
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The IPS address the message was signed with</source>
-        <translation>O endereço IPS que assinou a mensagem</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>O endereço Midas que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified IPS address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço IPS especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Midas especificado.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,16 +586,16 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>Send coins to a IPS address</source>
-        <translation>Enviar moedas para um endereço IPS</translation>
+        <source>Send coins to a Midas address</source>
+        <translation>Enviar moedas para um endereço Midas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ips: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e ips: URIs)</translation>
+        <source>Request payments (generates QR codes and midas: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e midas: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -606,24 +606,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Ips</source>
-        <translation>&amp;Sobre o Ips</translation>
+        <source>&amp;About Midas</source>
+        <translation>&amp;Sobre o Midas</translation>
     </message>
     <message>
-        <source>Show information about Ips</source>
-        <translation>Mostra informação sobre o Ips</translation>
+        <source>Show information about Midas</source>
+        <translation>Mostra informação sobre o Midas</translation>
     </message>
     <message>
-        <source>Modify configuration options for IPS</source>
-        <translation>Modificar opções de configuração para IPS</translation>
+        <source>Modify configuration options for Midas</source>
+        <translation>Modificar opções de configuração para Midas</translation>
     </message>
     <message>
-        <source>Sign messages with your IPS addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços IPS para provar que você os detém</translation>
+        <source>Sign messages with your Midas addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços Midas para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified IPS addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços IPS especificados</translation>
+        <source>Verify messages to ensure they were signed with specified Midas addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Midas especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -654,8 +654,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a IPS: URI or payment request</source>
-        <translation>Abrir um IPS: URI ou requisição de pagamento</translation>
+        <source>Open a Midas: URI or payment request</source>
+        <translation>Abrir um Midas: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -666,12 +666,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Ips help message to get a list with possible IPS command-line options</source>
-        <translation>Mostra a ajuda da Ips para receber uma lista com possíveis opções de linha de comando IPS</translation>
+        <source>Show the Midas help message to get a list with possible Midas command-line options</source>
+        <translation>Mostra a ajuda da Midas para receber uma lista com possíveis opções de linha de comando Midas</translation>
     </message>
     <message>
-        <source>Ips client</source>
-        <translation>Cliente Core IPS</translation>
+        <source>Midas client</source>
+        <translation>Cliente Core Midas</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -806,8 +806,8 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ips.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (ips.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (midas.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (midas.conf). </translation>
     </message>
 </context>
 <context>
@@ -1095,8 +1095,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid IPS address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de IPS</translation>
+        <source>The entered address "%1" is not a valid Midas address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Midas</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1141,16 +1141,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Ips</source>
-        <translation>Sobre o Ips</translation>
+        <source>About Midas</source>
+        <translation>Sobre o Midas</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1184,16 +1184,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Ips</source>
-        <translation>Bem-vindo ao Ips</translation>
+        <source>Welcome to Midas</source>
+        <translation>Bem-vindo ao Midas</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Ips will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Ips vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Midas will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Midas vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Ips will download and store a copy of the IPS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Ips vai baixar e armazenar uma cópia da blockchain IPS. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>Midas will download and store a copy of the Midas block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Midas vai baixar e armazenar uma cópia da blockchain Midas. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1204,8 +1204,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1460,48 +1460,48 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Ips</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 Ips</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 Midas</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 Ips</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 Ips</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 Ips to anonymize 10000 Ips</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 Ips para anonimizar 10000 Ips</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 Midas para anonimizar 10000 Midas</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 Ips to anonymize 10000 Ips</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 Ips para anonimizar 10000 Ips</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 Midas para anonimizar 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 Ips per 10000 Ips you anonymize.</source>
-        <translation>0.1 Ips por 10000 Ips que deixar anônima.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>0.1 Midas por 10000 Midas que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IPS's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela IPS's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Midas's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Midas's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IPS's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela IPS's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Midas's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Midas's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IPS's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela IPS's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Midas's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Midas's.</translation>
     </message>
 </context>
 <context>
@@ -1554,8 +1554,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the IPS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente IPS no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the Midas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente Midas no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1574,12 +1574,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start IPS after logging in to the system.</source>
-        <translation>Iniciar automaticamente IPS depois de logar no sistema.</translation>
+        <source>Automatically start Midas after logging in to the system.</source>
+        <translation>Iniciar automaticamente Midas depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start IPS on system login</source>
-        <translation>&amp;Iniciar IPS ao logar no sistema</translation>
+        <source>&amp;Start Midas on system login</source>
+        <translation>&amp;Iniciar Midas ao logar no sistema</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1590,8 +1590,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Rodadas de ofuscação para usar</translation>
     </message>
     <message>
-        <source>Amount of IPS to keep anonymized</source>
-        <translation>Quantidade de IPS a manter anônima</translation>
+        <source>Amount of Midas to keep anonymized</source>
+        <translation>Quantidade de Midas a manter anônima</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1606,8 +1606,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting IPS.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do IPS.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Midas.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Midas.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1616,8 +1616,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
 https://www.transifex.com/ipscoin/ipscoin-translations</translation>
     </message>
     <message>
-        <source>Connect to the IPS network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede IPS através de um proxy SOCKS5</translation>
+        <source>Connect to the Midas network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede Midas através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1755,8 +1755,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Fundos</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IPS network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede IPS após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Midas network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Midas após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1791,8 +1791,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Saldo ofuscado:</translation>
     </message>
     <message>
-        <source>0 Ips / 0 Rounds</source>
-        <translation>0 Ips / 0 Rodadas</translation>
+        <source>0 Midas / 0 Rounds</source>
+        <translation>0 Midas / 0 Rodadas</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -1966,8 +1966,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a IPS address (e.g. %1)</source>
-        <translation>Insira um endereço IPS (e.g. %1)</translation>
+        <source>Enter a Midas address (e.g. %1)</source>
+        <translation>Insira um endereço Midas (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2216,8 +2216,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the IPS RPC console.</source>
-        <translation>Bem-vindo ao console da IPS RPC</translation>
+        <source>Welcome to the Midas RPC console.</source>
+        <translation>Bem-vindo ao console da Midas RPC</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2472,8 +2472,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 Ips</source>
-        <translation>0 Ips</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2520,8 +2520,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Se a taxa padrão estiver definida para 1000 uIpss e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uIpss em taxa,&lt;br /&gt; pagará pelo menos 1000 uIpss. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for IPS transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de IPS do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Midas transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Midas do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2608,8 +2608,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>fundos anônimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid IPS address</source>
-        <translation>Aviso: endereço IPS inválido</translation>
+        <source>Warning: Invalid Midas address</source>
+        <translation>Aviso: endereço Midas inválido</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2703,8 +2703,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The IPS address to send the payment to</source>
-        <translation>O endereço IPS para enviar o pagamento</translation>
+        <source>The Midas address to send the payment to</source>
+        <translation>O endereço Midas para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2766,8 +2766,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Ips is shutting down...</source>
-        <translation>Ips está desligando...</translation>
+        <source>Midas is shutting down...</source>
+        <translation>Midas está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2785,8 +2785,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The IPS address to sign the message with</source>
-        <translation>O endereço IPS para assinar a mensagem</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>O endereço Midas para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2817,16 +2817,16 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this IPS address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço IPS</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Midas</translation>
     </message>
     <message>
-        <source>The IPS address the message was signed with</source>
-        <translation>O endereço IPS que assinou a mensagem</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>O endereço Midas que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified IPS address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço IPS especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified Midas address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Midas especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2908,8 +2908,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2924,8 +2924,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The Ips developers</source>
-        <translation>Os desenvolvedores do Ips</translation>
+        <source>The Midas developers</source>
+        <translation>Os desenvolvedores do Midas</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3408,8 +3408,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Enviar Moedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 Ips.</source>
-        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 Ips.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 Midas.</source>
+        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 Midas.</translation>
     </message>
 </context>
 <context>
@@ -3452,14 +3452,14 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
     </message>
 </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all IPS specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas IPS (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
+        <source>Disable all Midas specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas Midas (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
@@ -3478,12 +3478,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in Ips/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em Ips/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em Midas/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in Ips/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em Ips/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em Midas/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3506,8 +3506,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 Ips.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 Ips.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 Midas.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 Midas.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3522,8 +3522,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Ips will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core IPS não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Midas will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Midas não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3603,11 +3603,11 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
     </message>
     <message>
         <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Ips</translation>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Midas</translation>
     </message>
     <message>
-        <source>Copyright (C) %i The Ips Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Ips</translation>
+        <source>Copyright (C) %i The Midas Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Midas</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3658,8 +3658,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ips</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Ips</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Midas</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Midas</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3698,8 +3698,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in Ips/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em Ips/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in Midas/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em Midas/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -3806,8 +3806,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Script inválido detectado.</translation>
     </message>
     <message>
-        <source>Keep N Ips anonymized (default: %u)</source>
-        <translation>Manter N Ips anônimo (padrão: %u)</translation>
+        <source>Keep N Midas anonymized (default: %u)</source>
+        <translation>Manter N Midas anônimo (padrão: %u)</translation>
     </message>
     <message>
         <source>Last Obfuscation was too recent.</source>
@@ -4146,8 +4146,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ips to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o Ips para completar</translation>
+        <source>Wallet needed to be rewritten: restart Midas to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o Midas para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

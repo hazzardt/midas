@@ -2,6 +2,9 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -175,7 +178,7 @@ bool Intro::pickDataDirectory()
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
             } catch (fs::filesystem_error& e) {
-                QMessageBox::critical(0, tr("Ips"),
+                QMessageBox::critical(0, tr("Midas"),
                     tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }
@@ -184,8 +187,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the ips.conf file in the default data directory
-     * (to be consistent with ipsd behavior)
+     * override -datadir in the midas.conf file in the default data directory
+     * (to be consistent with midasd behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Ips addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Ips osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Midas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Midas osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Ips addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Ips osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Midas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Midas osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,15 +164,15 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Ips will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>Ips sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella Ipsien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <translation>Midas sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella Ipsien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Ips&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki Ipsisi&lt;/b&gt;</translation>
     </message>
     <message>
@@ -227,8 +227,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Ips Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Ips osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a Midas Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä Midas osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -236,8 +236,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The Ips address to sign the message with</source>
-        <translation>Ips osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>Midas osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -268,8 +268,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ips address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Ips osoitteen</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Midas osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,8 +288,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;BIP 38 salauksen avaus</translation>
     </message>
     <message>
-        <source>The Ips address the message was signed with</source>
-        <translation>Ips osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>Midas osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -575,16 +575,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips Ydin</translation>
+        <source>Midas</source>
+        <translation>Midas Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a Ips address</source>
-        <translation>Lähetä kolikkoja Ips osoitteeseen</translation>
+        <source>Send coins to a Midas address</source>
+        <translation>Lähetä kolikkoja Midas osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ips: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja ips: URIja)</translation>
+        <source>Request payments (generates QR codes and midas: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja midas: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -595,24 +595,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Ips</source>
-        <translation>Ips &amp;ytimestä</translation>
+        <source>&amp;About Midas</source>
+        <translation>Midas &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Ips</source>
-        <translation>Näytä tietoja Ips Ytimestä</translation>
+        <source>Show information about Midas</source>
+        <translation>Näytä tietoja Midas Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ips</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Ips:lle</translation>
+        <source>Modify configuration options for Midas</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Midas:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your Ips addresses to prove you own them</source>
+        <source>Sign messages with your Midas addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ips addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Ips osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Midas addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Midas osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -643,8 +643,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a Ips: URI or payment request</source>
-        <translation>Avaa Ips: URI tai pyydä maksua</translation>
+        <source>Open a Midas: URI or payment request</source>
+        <translation>Avaa Midas: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -655,12 +655,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Ips help message to get a list with possible Ips command-line options</source>
-        <translation>Näytä Ips Ydin apuviesti saadaksesi lista mahdollisista Ips komentolinja komennoista.</translation>
+        <source>Show the Midas help message to get a list with possible Midas command-line options</source>
+        <translation>Näytä Midas Ydin apuviesti saadaksesi lista mahdollisista Midas komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Ips client</source>
-        <translation>Ips Ydin asiakasohjelma</translation>
+        <source>Midas client</source>
+        <translation>Midas Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -894,8 +894,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips Ydin</translation>
+        <source>Midas</source>
+        <translation>Midas Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -913,12 +913,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Ips.</source>
-        <translation>Tervetuloa Ips Ytimeen.</translation>
+        <source>Welcome to Midas.</source>
+        <translation>Tervetuloa Midas Ytimeen.</translation>
     </message>
     <message>
-        <source>Ips</source>
-        <translation>Ips Ydin</translation>
+        <source>Midas</source>
+        <translation>Midas Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1091,32 +1091,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Ips</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Ips</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Midas</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 Ips</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Ips</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 Ips to anonymize 10000 Ips</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 Ips anonymoidaksesi 10000 Ips</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 Midas anonymoidaksesi 10000 Midas</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 Ips to anonymize 10000 Ips</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Ips anonymoidaksesi 10000 Ips</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Midas anonymoidaksesi 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 Ips per 10000 Ips you anonymize.</source>
-        <translation>0.1 per 10000 Ips, jotka anonymisoit.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>0.1 per 10000 Midas, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1165,12 +1165,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Ips after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Ips kun kirjaudut sisään.</translation>
+        <source>Automatically start Midas after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Midas kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Ips on system login</source>
-        <translation>&amp;Aloita Ips järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Midas on system login</source>
+        <translation>&amp;Aloita Midas järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1315,8 +1315,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Ips RPC console.</source>
-        <translation>Tervetuloa Ips RPC konsoliin.</translation>
+        <source>Welcome to the Midas RPC console.</source>
+        <translation>Tervetuloa Midas RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1503,8 +1503,8 @@ Please check the address and try again.</source>
         <translation>ei</translation>
     </message>
     <message>
-        <source>0 Ips</source>
-        <translation>0 Ips</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1608,8 +1608,8 @@ Please check the address and try again.</source>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Ips address to sign the message with</source>
-        <translation>Ips osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Midas address to sign the message with</source>
+        <translation>Midas osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1632,12 +1632,12 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ips address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Ips osoitteen</translation>
+        <source>Sign the message to prove you own this Midas address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Midas osoitteen</translation>
     </message>
     <message>
-        <source>The Ips address the message was signed with</source>
-        <translation>Ips osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Midas address the message was signed with</source>
+        <translation>Midas osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1675,8 +1675,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ips</source>
-        <translation>Ips Ydin</translation>
+        <source>Midas</source>
+        <translation>Midas Ydin</translation>
     </message>
     </context>
 <context>
@@ -1887,7 +1887,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>ips-core</name>
+    <name>midas-core</name>
     <message>
         <source>Error</source>
         <translation>Virhe</translation>

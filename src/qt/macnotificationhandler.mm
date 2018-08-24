@@ -1,6 +1,9 @@
 // Copyright (c) 2011-2013 The Bitcoin Core developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 IPSUM Developers
+// Copyright (c) 2018 Midas Developers
+
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,7 +18,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.ips.Ips-Qt";
+        return @"io.midas.Midas-Qt";
     } else {
         return [self __bundleIdentifier];
     }

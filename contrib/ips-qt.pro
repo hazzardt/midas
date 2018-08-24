@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/ips-config.h \
+           src/midas-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/ips-config.h \
+           src/config/midas-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/ips.moc \
+           src/qt/midas.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/ips-cli.cpp \
-           src/ips-tx.cpp \
-           src/ips.cpp \
+           src/midas-cli.cpp \
+           src/midas-tx.cpp \
+           src/midas.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,7 +471,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/ips.cpp \
+           src/qt/midas.cpp \
            src/qt/ipsstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
@@ -641,7 +641,7 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/ips.qrc src/qt/ips_locale.qrc
+RESOURCES += src/qt/midas.qrc src/qt/ips_locale.qrc
 
 TRANSLATIONS += src/qt/locale/ips_bg.ts \
                 src/qt/locale/ips_de.ts \

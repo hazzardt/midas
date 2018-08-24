@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/ips/.ips" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/ips/.ips"
+if [ -d "/var/lib/midas/.midas" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/midas/.midas"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/ipsd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/midasd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/ips/ips.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/ipsd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/ipsd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/midas/midas.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/midasd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/midasd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-ips}
-BITCOIND_GROUP=${BITCOIND_GROUP:-ips}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/ipsd}
+BITCOIND_USER=${BITCOIND_USER:-midas}
+BITCOIND_GROUP=${BITCOIND_GROUP:-midas}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/midasd}
 
-name="Ips Daemon"
-description="IPS crypto-currency p2p network daemon"
+name="Midas Daemon"
+description="Midas crypto-currency p2p network daemon"
 
-command="/usr/bin/ipsd"
+command="/usr/bin/midasd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run ipsd."
+		eerror "ERROR: You must set a secure rpcpassword to run midasd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Ips Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Midas Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

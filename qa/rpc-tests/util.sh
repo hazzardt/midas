@@ -3,6 +3,9 @@
 # Copyright (c) 2014-2015 The Dash developers
 # Copyright (c) 2015-2017 The PIVX developers
 # Copyright (c) 2018 IPSUM Developers
+# Copyright (c) 2018 Midas Developers
+
+
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +17,7 @@ function echoerr {
 
 # Usage: ExtractKey <key> "<json_object_string>"
 # Warning: this will only work for the very-well-behaved
-# JSON produced by ipsd, do NOT use it to try to
+# JSON produced by midasd, do NOT use it to try to
 # parse arbitrary/nested/etc JSON.
 function ExtractKey {
     echo $2 | tr -d ' "{}\n' | awk -v RS=',' -F: "\$1 ~ /$1/ { print \$2}"
@@ -23,7 +26,7 @@ function ExtractKey {
 function CreateDataDir {
   DIR=$1
   mkdir -p $DIR
-  CONF=$DIR/ips.conf
+  CONF=$DIR/midas.conf
   echo "regtest=1" >> $CONF
   echo "keypool=2" >> $CONF
   echo "rpcuser=rt" >> $CONF

@@ -1,2 +1,2 @@
-usr/local/bin/ipsd usr/bin
-usr/local/bin/ips-cli usr/bin
+usr/local/bin/midasd usr/bin
+usr/local/bin/midas-cli usr/bin

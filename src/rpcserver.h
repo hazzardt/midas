@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * IPS RPC command dispatcher.
+ * Midas RPC command dispatcher.
  */
 class CRPCTable
 {
