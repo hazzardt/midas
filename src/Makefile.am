@@ -371,7 +371,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-ipsd_LDADD = \
+midasd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -382,40 +382,40 @@ ipsd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-ipsd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+midasd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-ipsd_LDADD += libbitcoin_wallet.a
+midasd_LDADD += libbitcoin_wallet.a
 endif
-ipsd_SOURCES = midasd.cpp
+midasd_SOURCES = midasd.cpp
 #
 
 if TARGET_WINDOWS
-ipsd_SOURCES += midasd-res.rc
+midasd_SOURCES += midasd-res.rc
 endif
 
-ipsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-ipsd_CPPFLAGS = $(BITCOIN_INCLUDES)
-ipsd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+midasd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+midasd_CPPFLAGS = $(BITCOIN_INCLUDES)
+midasd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # midas-cli binary #
-ips_cli_LDADD = \
+midas_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-ips_cli_SOURCES = \
+midas_cli_SOURCES = \
   midas-cli.cpp
 
-ips_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+midas_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
 # midas-tx binary #
-ips_tx_LDADD = \
+midas_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -424,15 +424,15 @@ ips_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-ips_tx_SOURCES = midas-tx.cpp
-ips_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+midas_tx_SOURCES = midas-tx.cpp
+midas_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-ips_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+midas_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-ips_cli_SOURCES += midas-cli-res.rc
+midas_cli_SOURCES += midas-cli-res.rc
 endif
-ips_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+midas_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
