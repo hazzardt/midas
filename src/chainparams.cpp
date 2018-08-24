@@ -126,14 +126,14 @@ public:
         genesis.nNonce = 74833;
 
         hashGenesisBlock = genesis.GetHash();
-        printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        // printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 
         assert(hashGenesisBlock == uint256("0x000005215156447e2f6b170a1f959df6a4af3efc768c35ee99984680c29830ac"));
         assert(genesis.hashMerkleRoot == uint256("0x52ff0fa38c386c286eaf5777d3df6bebc156bc40dba484a4013f463a7ffb1ac9"));
 
         // vSeeds.push_back(CDNSSeedData("dnsseed1", "159.65.119.180"));
         // vSeeds.push_back(CDNSSeedData("dnsseed2", "159.89.6.25"));
-        vSeeds.clear();
+        // vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 38);
