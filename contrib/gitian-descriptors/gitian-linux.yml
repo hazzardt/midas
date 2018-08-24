@@ -1,5 +1,5 @@
 ---
-name: "midas-linux-3.0"
+name: "midas-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"

@@ -1,5 +1,5 @@
 ---
-name: "midas-rpi2-2.1.7"
+name: "midas-rpi2-1.0"
 enable_cache: true
 suites:
 - "trusty"
