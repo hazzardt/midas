@@ -1633,25 +1633,25 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     int64_t ret = 0;
 
     if (nHeight > 5 && nHeight <= 10000) {
-      nSubsidy = 160 * CENT;
+      ret = 160 * CENT;
     } else if (nHeight > 10000 && nHeight <= 25000) {
-      nSubsidy = 560 * CENT;
+      ret = 560 * CENT;
     } else if (nHeight > 25000 && nHeight <= 50000) {
-      nSubsidy = 720 * CENT;
+      ret = 720 * CENT;
     } else if (nHeight > 50000 && nHeight <= 75000) {
-      nSubsidy = 6 * COIN;
+      ret = 6 * COIN;
     } else if (nHeight > 75000 && nHeight <= 100000) {
-      nSubsidy = 525 * CENT;
+      ret = 525 * CENT;
     } else if (nHeight > 100000 && nHeight <= 150000) {
-      nSubsidy = 450 * CENT;
+      ret = 450 * CENT;
     } else if (nHeight > 150000 && nHeight <= 200000) {
-      nSubsidy = 375 * CENT;
+      ret = 375 * CENT;
     } else if (nHeight > 200000 && nHeight <= 250000) {
-      nSubsidy = 3 * COIN;
+      ret = 3 * COIN;
     } else if (nHeight > 250000 && nHeight <= 500000) {
-      nSubsidy = 225 * CENT;
+      ret = 225 * CENT;
     } else if (nHeight > 500000) {
-      nSubsidy = 150 * CENT;
+      ret = 150 * CENT;
     }
 
     return ret;
@@ -1662,19 +1662,19 @@ int64_t GetDevFee(int nHeight)
     int64_t ret = 0;
 
     if (nHeight > 50000 && nHeight <= 75000) {
-      nSubsidy = 40 * CENT;
+      ret = 40 * CENT;
     } else if (nHeight > 75000 && nHeight <= 100000) {
-      nSubsidy = 35 * CENT;
+      ret = 35 * CENT;
     } else if (nHeight > 100000 && nHeight <= 150000) {
-      nSubsidy = 30 * CENT;
+      ret = 30 * CENT;
     } else if (nHeight > 150000 && nHeight <= 200000) {
-      nSubsidy = 25 * CENT;
+      ret = 25 * CENT;
     } else if (nHeight > 200000 && nHeight <= 250000) {
-      nSubsidy = 20 * CENT;
+      ret = 20 * CENT;
     } else if (nHeight > 250000 && nHeight <= 500000) {
-      nSubsidy = 15 * CENT;
+      ret = 15 * CENT;
     } else if (nHeight > 500000) {
-      nSubsidy = 10 * CENT;
+      ret = 10 * CENT;
     }
 
     return ret;
