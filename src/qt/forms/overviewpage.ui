@@ -1687,8 +1687,8 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../res/icons/telegram.png</normaloff>../res/icons/telegram.png</iconset>
+             <iconset resource="../midas.qrc">
+              <normaloff>:/icons/telegram-icon</normaloff>:/icons/telegram-icon</iconset>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -1744,8 +1744,8 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../res/icons/twitter.png</normaloff>../res/icons/twitter.png</iconset>
+             <iconset resource="../midas.qrc">
+              <normaloff>:/icons/twitter-icon</normaloff>:/icons/twitter-icon</iconset>
             </property>
            </widget>
           </item>
@@ -1798,8 +1798,8 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../res/icons/discord.png</normaloff>../res/icons/discord.png</iconset>
+             <iconset resource="../midas.qrc">
+              <normaloff>:/icons/discord-icon</normaloff>:/icons/discord-icon</iconset>
             </property>
            </widget>
           </item>
@@ -1825,6 +1825,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../midas.qrc"/>
+ </resources>
  <connections/>
 </ui>
