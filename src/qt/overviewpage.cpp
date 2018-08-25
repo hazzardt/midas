@@ -28,6 +28,7 @@
 #include <QSettings>
 #include <QTimer>
 #include <QUrl>
+#include <QDesktopServices>
 
 #define DECORATION_SIZE 48
 #define ICON_OFFSET 16
