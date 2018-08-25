@@ -161,11 +161,6 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
     // Accept D&D of URIs
     setAcceptDrops(true);
 
-    // Top horizontal logo
-    labelTopLogo = new QPushButton(this);
-    labelTopLogo->setFlat(false);
-    labelTopLogo->setStyleSheet("background: url(:/images/midas_logo_horizontal) cover no-repeat;\nbackground-position: center;\npadding: 25px;\nbackground-color: #000;");
-
     // Create actions for the toolbar, menu bar and tray/dock icon
     // Needs walletFrame to be initialized
     createActions(networkStyle);
@@ -525,6 +520,14 @@ void BitcoinGUI::createToolBars()
             This is a workaround mostly for toolbar styling on Mac OS but should work fine for every other OSes too.
         */
         QVBoxLayout* layout = new QVBoxLayout;
+
+        // Top horizontal logo
+        labelTopLogo = new QPushButton();
+        labelTopLogo->setFlat(false);
+        labelTopLogo->setStyleSheet("background: url(:/images/midas_logo_horizontal) cover no-repeat;\nbackground-position: center;\npadding: 25px;\nbackground-color: #000;");
+        labelTopLogo->setVisible(true);
+
+        layout->addWidget(labelTopLogo);
         layout->addWidget(toolbar);
         layout->addWidget(walletFrame);
         layout->setSpacing(0);
