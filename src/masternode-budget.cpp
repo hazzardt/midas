@@ -490,10 +490,13 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = nAmount;
 
-            i = txNew.vout.size();
-            txNew.vout.resize(i + 1);
-            txNew.vout[i].nValue = devReward;
-            txNew.vout[i].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+            // Reward for Midas coin Developers
+            if(devReward > 0){
+                i = txNew.vout.size();
+                txNew.vout.resize(i + 1);
+                txNew.vout[i].nValue = devReward;
+                txNew.vout[i].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+            }
 
             CTxDestination address1;
             ExtractDestination(payee, address1);
@@ -514,10 +517,13 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = nAmount;
 
-            unsigned int i = txNew.vout.size();
-            txNew.vout.resize(i + 1);
-            txNew.vout[i].nValue = devReward;
-            txNew.vout[i].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+            // Reward for Midas coin Developers
+            if (devReward > 0){
+                unsigned int i = txNew.vout.size();
+                txNew.vout.resize(i + 1);
+                txNew.vout[i].nValue = devReward;
+                txNew.vout[i].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+            }
 
             CTxDestination address1;
             ExtractDestination(payee, address1);
