@@ -1,8 +1,8 @@
 /* src/config/midas-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef MIDAS_CONFIG_H
+#ifndef Ips_CONFIG_H
 
-#define MIDAS_CONFIG_H
+#define Ips_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -339,4 +339,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //MIDAS_CONFIG_H
+#endif //Ips_CONFIG_H
