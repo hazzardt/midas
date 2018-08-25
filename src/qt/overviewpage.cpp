@@ -544,15 +544,15 @@ void OverviewPage::toggleObfuscation()
 
 void OverviewPage::on_tgBtn_clicked()
 {
-    QDesktopServices::openUrl("https://t.me/midas_investment", QUrl::TolerantMode)
+    QDesktopServices::openUrl(QUrl("https://t.me/midas_investment", QUrl::TolerantMode));
 }
 
 void OverviewPage::on_twBtn_clicked()
 {
-    QDesktopServices::openUrl("http://twitter.com/MIDAS_NEWS", QUrl::TolerantMode)
+    QDesktopServices::openUrl(QUrl("http://twitter.com/MIDAS_NEWS", QUrl::TolerantMode));
 }
 
 void OverviewPage::on_dscBtn_clicked()
 {
-    QDesktopServices::openUrl("https://discord.gg/6Rcp2EN", QUrl::TolerantMode)
+    QDesktopServices::openUrl(QUrl("https://discord.gg/6Rcp2EN", QUrl::TolerantMode));
 }
