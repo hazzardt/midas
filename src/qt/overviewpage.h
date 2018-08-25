@@ -69,6 +69,9 @@ private slots:
     void handleTransactionClicked(const QModelIndex& index);
     void updateAlerts(const QString& warnings);
     void updateWatchOnlyLabels(bool showWatchOnly);
+    void on_tgBtn_clicked();
+    void on_twBtn_clicked();
+    void on_dscBtn_clicked();
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H
