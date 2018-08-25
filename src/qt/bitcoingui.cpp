@@ -76,6 +76,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             labelEncryptionIcon(0),
                                                                             labelConnectionsIcon(0),
                                                                             labelBlocksIcon(0),
+                                                                            labelTopLogo(0),
                                                                             progressBarLabel(0),
                                                                             progressBar(0),
                                                                             progressDialog(0),
@@ -159,6 +160,11 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
 
     // Accept D&D of URIs
     setAcceptDrops(true);
+
+    // Top horizontal logo
+    labelTopLogo = new QPushButton(this);
+    labelTopLogo->setFlat(false);
+    labelTopLogo->setStyleSheet("background: url(:/images/midas_logo_horizontal) cover no-repeat;\nbackground-position: center;\npadding: 25px;\nbackground-color: #000;");
 
     // Create actions for the toolbar, menu bar and tray/dock icon
     // Needs walletFrame to be initialized

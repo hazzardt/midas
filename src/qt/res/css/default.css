@@ -58,7 +58,7 @@ border:0px solid #333;
 min-height:2.5em;
 padding: 0em 1em;
 font-weight:bold;
-color:#fff;
+color:#333;
 }
 
 QToolBar > QToolButton:checked {
@@ -103,7 +103,7 @@ background-color:#dedbe5;
 
 QWidget {
 selection-background-color:#edd571; /* Object highlight color */
-selection-color:#fff;
+selection-color:#333;
 outline:0; /* Remove Annoying Focus Rectangle */
 }
 
@@ -811,7 +811,7 @@ QWidget .QFrame#frame .QLabel#label_5 { /* Wallet Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:transparent;
-color:#fff;
+color:#333;
 margin-right:5px;
 padding-right:5px;
 }
@@ -941,7 +941,7 @@ QWidget .QFrame#frameObfuscation .QLabel#label_2 { /* Obfuscation Header */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#edd571;
-color:#fff;
+color:#333;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;

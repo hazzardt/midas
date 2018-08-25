@@ -90,6 +90,7 @@ private:
     QProgressDialog* progressDialog;
 
     QMenuBar* appMenuBar;
+    QPushButton* labelTopLogo;
     QAction* overviewAction;
     QAction* historyAction;
     QAction* masternodeAction;
