@@ -63,7 +63,7 @@
                </font>
               </property>
               <property name="text">
-               <string>&amp;Balances</string>
+               <string>Balances</string>
               </property>
              </widget>
             </item>
@@ -79,7 +79,7 @@
                <string notr="true">QLabel { color: red; }</string>
               </property>
               <property name="text">
-               <string notr="true">(o&amp;ut of sync)</string>
+               <string notr="true">(out of sync)</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
