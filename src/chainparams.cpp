@@ -55,10 +55,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000048733307cbe1c75c99b61339581f004e89dd966a1ceae797413beade8ec"));
+    (0, uint256("0x000003c53b3eec1c0b5c08f50cabc095fe987053bfe50a67cd195c87f30bb6c1"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1535381400, // * UNIX timestamp of last checkpoint block
+    1535385000, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
@@ -121,17 +121,17 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1535381400;
+        genesis.nTime = 1535385000;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 478914;
+        genesis.nNonce = 1113287;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x0000048733307cbe1c75c99b61339581f004e89dd966a1ceae797413beade8ec"));
+        assert(hashGenesisBlock == uint256("0x000003c53b3eec1c0b5c08f50cabc095fe987053bfe50a67cd195c87f30bb6c1"));
         assert(genesis.hashMerkleRoot == uint256("0x52ff0fa38c386c286eaf5777d3df6bebc156bc40dba484a4013f463a7ffb1ac9"));
 
-        // vSeeds.push_back(CDNSSeedData("dnsseed1", "159.65.119.180"));
+        vSeeds.push_back(CDNSSeedData("dnsseed1", "176.112.193.24"));
         // vSeeds.push_back(CDNSSeedData("dnsseed2", "159.89.6.25"));
         // vSeeds.clear();
 
