@@ -210,7 +210,7 @@
             <item row="5" column="0">
              <widget class="QLabel" name="labelTotalText">
               <property name="text">
-               <string>&amp;Total:</string>
+               <string>Total:</string>
               </property>
              </widget>
             </item>
@@ -255,7 +255,7 @@
             <item row="3" column="0">
              <widget class="QLabel" name="labelImmatureText">
               <property name="text">
-               <string>&amp;Immature:</string>
+               <string>Immature:</string>
               </property>
              </widget>
             </item>
@@ -312,7 +312,7 @@
             <item row="0" column="2">
              <widget class="QLabel" name="labelWatchonly">
               <property name="text">
-               <string>&amp;Watch-only:</string>
+               <string>Watch-only:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -322,7 +322,7 @@
             <item row="1" column="0">
              <widget class="QLabel" name="labelBalanceText">
               <property name="text">
-               <string>&amp;Available:</string>
+               <string>Available:</string>
               </property>
              </widget>
             </item>
@@ -379,14 +379,14 @@
             <item row="2" column="0">
              <widget class="QLabel" name="labelPendingText">
               <property name="text">
-               <string>&amp;Pending:</string>
+               <string>Pending:</string>
               </property>
              </widget>
             </item>
             <item row="0" column="1">
              <widget class="QLabel" name="labelSpendable">
               <property name="text">
-               <string>&amp;Spendable:</string>
+               <string>Spendable:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -444,7 +444,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="label_7">
              <property name="text">
-              <string>&amp;Completion:</string>
+              <string>Completion:</string>
              </property>
             </widget>
            </item>
@@ -464,7 +464,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="labelAnonymizedText">
              <property name="text">
-              <string>&amp;Obfuscation Balance:</string>
+              <string>Obfuscation Balance:</string>
              </property>
             </widget>
            </item>
@@ -477,14 +477,14 @@
               </font>
              </property>
              <property name="text">
-              <string notr="true">0 &amp;Midas</string>
+              <string notr="true">0 Midas</string>
              </property>
             </widget>
            </item>
            <item row="3" column="0">
             <widget class="QLabel" name="label_8">
              <property name="text">
-              <string>Amount and &amp;Rounds:</string>
+              <string>Amount and Rounds:</string>
              </property>
             </widget>
            </item>
@@ -498,7 +498,7 @@
            <item row="4" column="0">
             <widget class="QLabel" name="label_9">
              <property name="text">
-              <string>Submitted &amp;Denom:</string>
+              <string>Submitted Denom:</string>
              </property>
             </widget>
            </item>
@@ -508,14 +508,14 @@
               <string>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</string>
              </property>
              <property name="text">
-              <string>&amp;n/a</string>
+              <string>n/a</string>
              </property>
             </widget>
            </item>
            <item row="0" column="1">
             <widget class="QLabel" name="obfuscationEnabled">
              <property name="text">
-              <string>&amp;Enabled/Disabled</string>
+              <string>Enabled/Disabled</string>
              </property>
             </widget>
            </item>
@@ -1006,7 +1006,7 @@
            </size>
           </property>
           <property name="text">
-           <string>(&amp;Last Message)</string>
+           <string>(Last Message)</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1081,7 +1081,7 @@
               </font>
              </property>
              <property name="text">
-              <string>Ob&amp;fuscation</string>
+              <string>Obfuscation</string>
              </property>
             </widget>
            </item>
