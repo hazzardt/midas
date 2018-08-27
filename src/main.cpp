@@ -69,7 +69,7 @@ bool fReindex = false;
 bool fTxIndex = true;
 bool fIsBareMultisigStd = true;
 bool fCheckBlockIndex = false;
-unsigned int nCoinCacheSize = 5000;
+unsigned int nCoinCacheSize = 1000;
 bool fAlerts = DEFAULT_ALERTS;
 
 unsigned int nStakeMinAge = 60 * 60;
