@@ -556,3 +556,8 @@ void OverviewPage::on_dscBtn_clicked()
 {
     QDesktopServices::openUrl(QUrl("https://discord.gg/6Rcp2EN", QUrl::TolerantMode));
 }
+
+void OverviewPage::on_pushButton_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://midas.investments/", QUrl::TolerantMode));
+}

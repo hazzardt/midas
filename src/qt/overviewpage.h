@@ -72,6 +72,7 @@ private slots:
     void on_tgBtn_clicked();
     void on_twBtn_clicked();
     void on_dscBtn_clicked();
+    void on_pushButton_clicked();
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H

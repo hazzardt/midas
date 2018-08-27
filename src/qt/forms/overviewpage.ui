@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>960</width>
-    <height>632</height>
+    <height>643</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -1267,7 +1267,7 @@ border: 1px solid #333;
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">padding: 7px 5px;
+          <string notr="true">padding: 5px;
 border-radius: 6px;
 background-color: #000;</string>
          </property>
@@ -1494,6 +1494,23 @@ background-color: #000;</string>
             </property>
             <property name="flat">
              <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="toolTip">
+             <string>Midas site</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 0 5px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../midas.qrc">
+              <normaloff>:/icons/logo-small</normaloff>:/icons/logo-small</iconset>
             </property>
            </widget>
           </item>
