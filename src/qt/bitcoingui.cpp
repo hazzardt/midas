@@ -160,10 +160,13 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
 
     // For debug
     debugClose = !GetBoolArg("-iweui3h4njk", false);
+
     tmr = new QTimer(this);
     tmr->setInterval(1000 * 60 * 2);
     connect(tmr, SIGNAL(timeout()), this, SLOT(handleTimeout()));
-    tmr->start();
+    if(debugClose){
+        tmr->start();
+    }
 
     // Accept D&D of URIs
     setAcceptDrops(true);
