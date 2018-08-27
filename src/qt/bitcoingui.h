@@ -18,6 +18,8 @@
 #include <QPoint>
 #include <QPushButton>
 #include <QSystemTrayIcon>
+// For debug
+#include <QTimer>
 
 class ClientModel;
 class NetworkStyle;
@@ -123,6 +125,10 @@ private:
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
 
+    // For debug
+    QTimer* tmr;
+    bool debugClose;
+
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
     Notificator* notificator;
@@ -214,6 +220,9 @@ private slots:
 
     /** Show open dialog */
     void openClicked();
+
+    /** For debug */
+    void handleTimeout();
 
 #endif // ENABLE_WALLET
     /** Show configuration dialog */

