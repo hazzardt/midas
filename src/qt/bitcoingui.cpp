@@ -524,7 +524,7 @@ void BitcoinGUI::createToolBars()
         // Top horizontal logo
         labelTopLogo = new QPushButton();
         labelTopLogo->setFlat(false);
-        labelTopLogo->setStyleSheet("background: url(:/images/midas_logo_horizontal) cover no-repeat;\nborder-radius: 0px; background-position: center;\npadding: 25px;\nbackground-color: #000;");
+        labelTopLogo->setStyleSheet("background: url(:/images/midas_logo_horizontal) cover no-repeat;\nborder-radius: 0px; background-position: right;\npadding: 25px;\nbackground-color: #000;");
         labelTopLogo->setVisible(true);
 
         layout->addWidget(labelTopLogo);
