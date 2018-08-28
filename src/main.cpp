@@ -333,7 +333,7 @@ int GetHeight()
 CScript GetDevFeeScript()
 {
     CBitcoinAddress devAddress = CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9");
-    return GetScriptForDestination(devAddress->Get());
+    return GetScriptForDestination(devAddress.Get());
 }
 
 void UpdatePreferredDownload(CNode* node, CNodeState* state)
