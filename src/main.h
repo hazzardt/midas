@@ -141,6 +141,7 @@ extern bool fCheckBlockIndex;
 extern unsigned int nCoinCacheSize;
 extern CFeeRate minRelayTxFee;
 extern bool fAlerts;
+extern CScript devPayment;
 
 extern bool fLargeWorkForkFound;
 extern bool fLargeWorkInvalidChainFound;

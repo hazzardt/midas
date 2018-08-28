@@ -75,6 +75,8 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
+CScript devPayment = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
@@ -1675,6 +1677,8 @@ int64_t GetDevFee(int nHeight)
       ret = 15 * CENT;
     } else if (nHeight > 500000) {
       ret = 10 * CENT;
+    } else if (nHeight == 2){
+        ret = 1 * CENT; // For test
     }
 
     return ret;
