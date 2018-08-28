@@ -339,7 +339,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     if (devFee > 0){
         unsigned int i = txNew.vout.size();
         txNew.vout.resize(i + 1);
-        txNew.vout[i].scriptPubKey = devPayment;
+        txNew.vout[i].scriptPubKey = GetDevFeeScript();
         txNew.vout[i].nValue = devFee;
         LogPrint("devfee","Dev fee payment for %lld\n", devFee);
     }

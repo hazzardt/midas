@@ -75,10 +75,6 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
-CBitcoinAddress devAddress = CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9");
-
-CScript devPayment = GetScriptForDestination(devAddress.Get());
-
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
@@ -332,6 +328,11 @@ int GetHeight()
         }
         return chainActive.Height();
     }
+}
+
+CScript GetDevFeeScript() const {
+    CBitcoinAddress devAddress = CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9");
+    return GetScriptForDestination(devAddress->Get());
 }
 
 void UpdatePreferredDownload(CNode* node, CNodeState* state)
