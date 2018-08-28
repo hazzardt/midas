@@ -306,7 +306,6 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue);
     CAmount devFee = GetDevFee(pindexPrev->nHeight);
-    CScript devPay = GetDevFeeScript();
     
     if (hasPayment) {
         if (fProofOfStake) {
@@ -340,7 +339,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     if (devFee > 0){
         unsigned int i = txNew.vout.size();
         txNew.vout.resize(i + 1);
-        txNew.vout[i].scriptPubKey = devPay;
+        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9").Get());
         txNew.vout[i].nValue = devFee;
         LogPrint("devfee","Dev fee payment for %lld\n", devFee);
     }
