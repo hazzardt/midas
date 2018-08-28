@@ -356,6 +356,15 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
         } else if (!fProofOfStake) {
             txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
+            CAmount devFee = GetDevFee(pindexPrev->nHeight);
+            
+            if (devFee > 0){
+                unsigned int i = txNew.vout.size();
+                txNew.vout.resize(i + 1);
+                txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9").Get());
+                txNew.vout[i].nValue = devFee;
+                LogPrint("devfee","Dev fee payment for %lld\n", devFee);
+            }
             pblock->vtx[0] = txNew;
             pblocktemplate->vTxFees[0] = -nFees;
         }
