@@ -77,7 +77,7 @@ int64_t nReserveBalance = 0;
 
 CBitcoinAddress devAddress = CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9");
 
-CScript devPayment = GetScriptForDestination(devAddress->Get());
+CScript devPayment = GetScriptForDestination(devAddress.Get());
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
