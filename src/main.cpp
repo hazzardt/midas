@@ -1675,9 +1675,7 @@ int64_t GetDevFee(int nHeight)
       ret = 15 * CENT;
     } else if (nHeight > 500000) {
       ret = 10 * CENT;
-    } else if (nHeight == 10){
-        ret = 1000 * COIN; // For test
-    }
+    } 
 
     return ret;
 }
