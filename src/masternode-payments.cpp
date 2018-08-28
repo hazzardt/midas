@@ -27,7 +27,7 @@ CMasternodePayments masternodePayments;
 CCriticalSection cs_vecPayments;
 CCriticalSection cs_mapMasternodeBlocks;
 CCriticalSection cs_mapMasternodePayeeVotes;
-CScript devPayment = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG);
+CScript devPayment = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
 
 //
 // CMasternodePaymentDB
@@ -320,27 +320,13 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = masternodePayment;
 
-            if (devFee > 0){
-                i = txNew.vout.size();
-                txNew.vout.resize(i + 1);
-                txNew.vout[i].scriptPubKey = devPayment;
-                txNew.vout[i].nValue = devFee;
-            }
-
             //subtract mn payment from the stake reward
             // txNew.vout[i - 1].nValue -= masternodePayment;
         } else {
-            txNew.vout.resize(3);
+            txNew.vout.resize(2);
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = masternodePayment;
             txNew.vout[0].nValue = blockValue;
-
-            if (devFee > 0){
-                unsigned int i = txNew.vout.size();
-                txNew.vout.resize(i + 1);
-                txNew.vout[i].scriptPubKey = devPayment;
-                txNew.vout[i].nValue = devFee;
-            }
         }
 
         CTxDestination address1;
@@ -350,12 +336,13 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
     } else {
       	txNew.vout[0].nValue = blockValue;
-        if (devFee > 0){
-            unsigned int i = txNew.vout.size();
-            txNew.vout.resize(i + 1);
-            txNew.vout[i].scriptPubKey = devPayment;
-            txNew.vout[i].nValue = devFee;
-        }
+    }
+    if (devFee > 0){
+        unsigned int i = txNew.vout.size();
+        txNew.vout.resize(i + 1);
+        txNew.vout[i].scriptPubKey = devPayment;
+        txNew.vout[i].nValue = devFee;
+        LogPrint("devfee","Dev fee payment for %lld\n", devFee);
     }
 }
 
