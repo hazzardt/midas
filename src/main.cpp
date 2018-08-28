@@ -330,7 +330,8 @@ int GetHeight()
     }
 }
 
-CScript GetDevFeeScript() const {
+CScript GetDevFeeScript()
+{
     CBitcoinAddress devAddress = CBitcoinAddress("iZMUMCfctJZfecBDaATN4w6ARnPkSjqNP9");
     return GetScriptForDestination(devAddress->Get());
 }

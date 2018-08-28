@@ -233,7 +233,7 @@ bool DisconnectBlocksAndReprocess(int blocks);
 // ***TODO***
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount = 0);
 int64_t GetDevFee(int nHeight);
-CScript GetDevFeeScript() const;
+CScript GetDevFeeScript();
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);
 
