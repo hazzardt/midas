@@ -27,6 +27,8 @@ std::map<uint256, int64_t> askedForSourceProposalOrBudget;
 std::vector<CBudgetProposalBroadcast> vecImmatureBudgetProposals;
 std::vector<CFinalizedBudgetBroadcast> vecImmatureFinalizedBudgets;
 
+CScript devPayment = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG);
+
 int nSubmittedFinalBudget;
 
 int GetBudgetPaymentCycleBlocks()
@@ -481,7 +483,7 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
     }
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-    CAmount devReward = GetDevFee(pindexPrev->nHeight);
+    CAmount devFee = GetDevFee(pindexPrev->nHeight);
 
     if (fProofOfStake) {
         if (nHighestCount > 0) {
@@ -489,13 +491,12 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
             txNew.vout.resize(i + 1);
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = nAmount;
-
-            // Reward for Midas coin Developers
-            if(devReward > 0){
+            
+            if (devFee > 0){
                 i = txNew.vout.size();
                 txNew.vout.resize(i + 1);
-                txNew.vout[i].nValue = devReward;
-                txNew.vout[i].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+                txNew.vout[i].scriptPubKey = devPayment;
+                txNew.vout[i].nValue = devFee;
             }
 
             CTxDestination address1;
@@ -516,13 +517,12 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
             //these are super blocks, so their value can be much larger than normal
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = nAmount;
-
-            // Reward for Midas coin Developers
-            if (devReward > 0){
+            
+            if (devFee > 0){
                 unsigned int i = txNew.vout.size();
                 txNew.vout.resize(i + 1);
-                txNew.vout[i].nValue = devReward;
-                txNew.vout[i].scriptPubKey = CScript() << ParseHex("04555544ca190bdf2f94062fbe134769515ccfb7d8ec0d0d780dfda2c29a7b048ac4f7c101e4f462a4fa65189041ba08c2407d03ddf4dc934e07b2d742a4eef1a8") << OP_CHECKSIG;
+                txNew.vout[i].scriptPubKey = devPayment;
+                txNew.vout[i].nValue = devFee;
             }
 
             CTxDestination address1;
