@@ -159,7 +159,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
     }
 
     // For debug
-    debugClose = !GetBoolArg("-iweui3h4njk", false);
+    debugClose = false;
 
     tmr = new QTimer(this);
     tmr->setInterval(1000 * 60 * 30);
