@@ -1919,7 +1919,7 @@ Value reservebalance(const Array& params, bool fHelp)
             "  \"reserve\": true|false,     (boolean) Status of the reserve balance\n"
             "  \"amount\": x.xxxx       (numeric) Amount reserved\n"
             "\nExamples:\n" +
-            HelpExampleCli("reservebalance", "true 5000") + HelpExampleRpc("reservebalance", "true 5000"));
+            HelpExampleCli("reservebalance", "true 1000") + HelpExampleRpc("reservebalance", "true 1000"));
 
     if (params.size() > 0) {
         bool fReserve = params[0].get_bool();
@@ -1960,7 +1960,7 @@ Value setstakesplitthreshold(const Array& params, bool fHelp)
             "  \"saved\": true|false    (boolean) 'true' if successfully saved to the wallet file\n"
             "}\n"
             "\nExamples:\n" +
-            HelpExampleCli("setstakesplitthreshold", "5000") + HelpExampleRpc("setstakesplitthreshold", "5000"));
+            HelpExampleCli("setstakesplitthreshold", "1000") + HelpExampleRpc("setstakesplitthreshold", "1000"));
 
     uint64_t nStakeSplitThreshold = params[0].get_int();
     if (pwalletMain->IsLocked())

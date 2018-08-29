@@ -16,7 +16,7 @@ mn3 127.0.0.4:22333 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRqc3UPeShtHWJDjDv db478e78
 ```
 
 In the example above:
-* the collateral for mn1 consists of transaction 2bcd3c84c84f87eaa86e4e56834b92e0d03244568810b92e0d0324456a67c, output index 0 has amount 5000
+* the collateral for mn1 consists of transaction 2bcd3c84c84f87eaa86e4e56834b92e0d03244568810b92e0d0324456a67c, output index 0 has amount 1000
 * masternode 2 will donate 33% of its income
 * masternode 3 will donate 100% of its income
 
