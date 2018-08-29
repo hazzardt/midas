@@ -55,10 +55,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000773ae3512955052956bdcb8d29a8a3ee56f3eb3b58c44ba8c91a5a34b97"));
+    (0, uint256("0x00000ce255a41b4049fcf748a560fb342527291b5e9a1c478928a5014613d136"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1535548500, // * UNIX timestamp of last checkpoint block
+    1535563500, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
@@ -68,7 +68,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1535548500,
+    1535563500,
     0,
     250};
 
@@ -76,7 +76,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1535548500,
+    1535563500,
     0,
     100};
 
@@ -104,7 +104,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60;
         nTargetSpacing = 2 * 60;
-        nLastPOWBlock = 100;
+        nLastPOWBlock = 300;
         nMaturity = 20;
         nMasternodeCountDrift = 30;
         nModifierUpdateBlock = 1;
@@ -121,18 +121,19 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1535548500;
+        genesis.nTime = 1535563500;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1228033;
+        genesis.nNonce = 1207310;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x00000773ae3512955052956bdcb8d29a8a3ee56f3eb3b58c44ba8c91a5a34b97"));
+        assert(hashGenesisBlock == uint256("0x00000ce255a41b4049fcf748a560fb342527291b5e9a1c478928a5014613d136"));
         assert(genesis.hashMerkleRoot == uint256("0x52ff0fa38c386c286eaf5777d3df6bebc156bc40dba484a4013f463a7ffb1ac9"));
 
         vSeeds.push_back(CDNSSeedData("dnsseed1", "194.177.20.56"));
         vSeeds.push_back(CDNSSeedData("dnsseed2", "194.177.21.223"));
+        vSeeds.push_back(CDNSSeedData("dnsseed3", "5.61.33.245"));
         // vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
