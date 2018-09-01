@@ -55,7 +55,7 @@ margin:0;
 QToolBar > QToolButton {
 background-color:#edd571;
 border:0px solid #333;
-min-height:2.5em;
+min-height:2em;
 padding: 0em 1em;
 font-weight:bold;
 color:#333;
@@ -680,7 +680,7 @@ min-width:260px;
 QDialog#AskPassphraseDialog QLabel#passLabel1, QDialog#AskPassphraseDialog QLabel#passLabel2, QDialog#AskPassphraseDialog QLabel#passLabel3 {
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:170px;
-min-height:33px; /* base width of 25px for QLineEdit, plus padding and border */
+min-height:25px; /* base width of 25px for QLineEdit, plus padding and border */
 }
 
 /* Options Dialog */
@@ -711,7 +711,7 @@ margin-bottom:0px;
 QDialog#OptionsDialog QLabel#label_3 { /* Translations Missing? Label */
 qproperty-alignment: 'AlignVCenter | AlignCenter';
 color:#818181;
-padding-bottom:8px;
+padding-bottom:2px;
 }
 
 QDialog#OptionsDialog QCheckBox {
@@ -720,7 +720,7 @@ min-height:20px;
 }
 
 QDialog#OptionsDialog QCheckBox#displayAddresses {
-min-height:33px;
+min-height:25px;
 }
 
 /**************************** TOOLS MENU ************************************************/
@@ -804,7 +804,7 @@ min-width:490px;
 QWidget .QFrame#frame > .QLabel {
 min-width:190px;
 font-weight:normal;
-min-height:30px;
+min-height:25px;
 }
 
 QWidget .QFrame#frame .QLabel#label_5 { /* Wallet Label */
@@ -842,7 +842,7 @@ margin-right:5px;
 padding-right:5px;
 font-weight:bold;
 font-size:14px;
-min-height:35px;
+min-height:25px;
 }
 
 QWidget .QFrame#frame .QLabel#labelBalance { /* Available Balance */
@@ -946,7 +946,7 @@ margin-right:5px;
 padding-right:5px;
 font-weight:bold;
 font-size:14px;
-min-height:35px;
+min-height:25px;
 }
 
 /**************************** OBFUSCATION ***********************************************/
@@ -1071,7 +1071,7 @@ color:#ffffff;
 padding-left:10px;
 padding-right:10px;
 padding-top:5px;
-padding-bottom:6px;
+padding-bottom:0px;
 }
 
 QWidget .QFrame#frameObfuscation .QPushButton#toggleObfuscation:hover {
@@ -1131,7 +1131,7 @@ QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 min-width:180px;
 color:#333;
 margin-left:67px;
-margin-top:83px;
+margin-top:5px;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
@@ -1142,7 +1142,7 @@ min-height:24px;
 QWidget .QFrame#frame_2 .QLabel#labelTransactionsStatus { /* Recent Transactions Sync Status */
 qproperty-alignment: 'AlignBottom | AlignRight';
 min-width:93px;
-margin-top:83px;
+margin-top:15px;
 margin-left:16px;
 margin-right:5px;
 min-height:16px;
@@ -1152,7 +1152,7 @@ QWidget .QFrame#frame_2 QListView { /* Transaction List */
 font-weight:normal;
 font-size:12px;
 max-width:369px;
-margin-top:12px;
+margin-top:5px;
 margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons */
 }
 
@@ -1249,8 +1249,8 @@ font-weight:bold;
 background:transparent;
 /*background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 rgba(248, 246, 246, 128), stop: 1 rgba(0, 0, 0, 0));*/
 border-radius:5px;
-padding-top:20px;
-padding-bottom:18px;
+padding-top:5px;
+padding-bottom:5px;
 }
 
 QDialog#SendCoinsDialog .QCheckBox#checkSwiftTX { /* SwiftTX Checkbox */
@@ -1259,8 +1259,8 @@ font-weight:bold;
 background:transparent;
 /*background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 rgba(248, 246, 246, 128), stop: 1 rgba(0, 0, 0, 0));*/
 border-radius:5px;
-padding-top:20px;
-padding-bottom:18px;
+padding-top:5px;
+padding-bottom:5px;
 margin-left:10px;
 margin-right:20px;
 }
@@ -1339,12 +1339,12 @@ QStackedWidget#SendCoinsEntry .QLineEdit#addAsLabel { /* Pay To Input Field */
 /**************************** COIN CONTROL POPUP ****************************************/
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlQuantityText { /* Coin Control Quantity Label */
-min-height:30px;
+min-height:25px;
 padding-left:15px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlQuantity { /* Coin Control Quantity */
-min-height:30px;
+min-height:25px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlBytesText { /* Coin Control Bytes Label */
@@ -1355,12 +1355,12 @@ QDialog#CoinControlDialog .QLabel#labelCoinControlBytes { /* Coin Control Bytes 
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlAmountText { /* Coin Control Amount Label */
-min-height:30px;
+min-height:25px;
 padding-left:15px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlAmount { /* Coin Control Amount */
-min-height:30px;
+min-height:25px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlPriorityText { /* Coin Control Priority Label */
@@ -1371,12 +1371,12 @@ QDialog#CoinControlDialog .QLabel#labelCoinControlPriority { /* Coin Control Pri
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlFeeText { /* Coin Control Fee Label */
-min-height:30px;
+min-height:25px;
 padding-left:15px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlFee { /* Coin Control Fee */
-min-height:30px;
+min-height:25px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlLowOutputText { /* Coin Control Low Output Label */
@@ -1387,12 +1387,12 @@ QDialog#CoinControlDialog .QLabel#labelCoinControlLowOutput { /* Coin Control Lo
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlAfterFeeText { /* Coin Control After Fee Label */
-min-height:30px;
+min-height:25px;
 padding-left:15px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlAfterFee { /* Coin Control After Fee */
-min-height:30px;
+min-height:25px;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlChangeText { /* Coin Control Change Label */
