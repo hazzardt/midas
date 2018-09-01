@@ -1980,7 +1980,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
     </message>
     <message>
         <source>out of sync</source>
-        <translation>несинронизировано</translation>
+        <translation>не синронизировано</translation>
     </message>
     <message>
         <source>Disabled</source>
