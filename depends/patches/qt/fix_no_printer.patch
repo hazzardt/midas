@@ -14,6 +14,7 @@
      qtConfig(imageformatplugin): SUBDIRS *= imageformats
      !android:qtConfig(library): SUBDIRS *= generic
  }
+
 -
 -!winrt:qtHaveModule(printsupport): \
 -    SUBDIRS += printsupport
