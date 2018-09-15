@@ -89,10 +89,10 @@ public:
         strNetworkID = "main";
         nDefaultPort = 44444;
 
-        pchMessageStart[0] = 0xb1;
-        pchMessageStart[1] = 0x2a;
-        pchMessageStart[2] = 0xa3;
-        pchMessageStart[3] = 0xe2;
+        pchMessageStart[0] = 0xa0;
+        pchMessageStart[1] = 0x4e;
+        pchMessageStart[2] = 0x0f;
+        pchMessageStart[3] = 0xc1;
         vAlertPubKey = ParseHex("04a7cf65df61f736b36388738bb5f37fc549b2c67361f38a5a244b8e362422288c32561807492d331f62a2406fc49b260caad2c38ed27b7bcb13148593c99f4ceb");
         
         bnProofOfWorkLimit = ~uint256(0) >> 20;
@@ -145,7 +145,7 @@ public:
         vSeeds.push_back(CDNSSeedData("dnsseed10", "104.238.136.127"));
         // vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 110);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 38);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 138);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x24)(0x33)(0x24).convert_to_container<std::vector<unsigned char> >();
