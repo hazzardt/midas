@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="IpsSupply">
+    <widget class="QLabel" name="MdsSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="IpsDemand">
+    <widget class="QLabel" name="MdsDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyIps">
+    <widget class="QPushButton" name="BuyMds">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1707,7 +1707,7 @@
       <string>Midas</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputIps">
+    <widget class="QLineEdit" name="UnitsInputMds">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellIpsBTN">
+    <widget class="QPushButton" name="SellMdsBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1782,7 +1782,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="IpsAvailableLabel">
+       <widget class="QLabel" name="MdsAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelIps">
+       <widget class="QLabel" name="labelMds">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="IpsBalanceLabel">
+    <widget class="QLabel" name="MdsBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="IpsAvailableLabel_2">
+    <widget class="QLabel" name="MdsAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>Midas Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="IpsPendingLabel">
+    <widget class="QLabel" name="MdsPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertIps">
+     <widget class="QPushButton" name="btnConvertMds">
       <property name="geometry">
        <rect>
         <x>260</x>

@@ -60,8 +60,8 @@ Value obfuscation(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "obfuscation <ipsaddress> <amount>\n"
-            "ipsaddress, reset, or auto (AutoDenominate)"
+            "obfuscation <midasaddress> <amount>\n"
+            "midasaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -82,8 +82,8 @@ Value obfuscation(const Array& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "obfuscation <ipsaddress> <amount>\n"
-            "ipsaddress, denominate, or auto (AutoDenominate)"
+            "obfuscation <midasaddress> <amount>\n"
+            "midasaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 

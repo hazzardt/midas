@@ -168,7 +168,7 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
         <translation>Midas сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия Midas от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>

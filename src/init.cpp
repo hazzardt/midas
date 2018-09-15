@@ -468,7 +468,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageGroup(_("Obfuscation options:"));
     strUsage += HelpMessageOpt("-enableobfuscation=<n>", strprintf(_("Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)"), 0));
     strUsage += HelpMessageOpt("-obfuscationrounds=<n>", strprintf(_("Use N separate masternodes to anonymize funds  (2-8, default: %u)"), 2));
-    strUsage += HelpMessageOpt("-anonymizeipsamount=<n>", strprintf(_("Keep N Midas anonymized (default: %u)"), 0));
+    strUsage += HelpMessageOpt("-anonymizemidasamount=<n>", strprintf(_("Keep N Midas anonymized (default: %u)"), 0));
     strUsage += HelpMessageOpt("-liquidityprovider=<n>", strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0));
 
     strUsage += HelpMessageGroup(_("SwiftTX options:"));
@@ -1579,9 +1579,9 @@ bool AppInit2(boost::thread_group& threadGroup)
         nObfuscationRounds = 99999;
     }
 
-    nAnonymizeIpsAmount = GetArg("-anonymizeipsamount", 0);
-    if (nAnonymizeIpsAmount > 999999) nAnonymizeIpsAmount = 999999;
-    if (nAnonymizeIpsAmount < 2) nAnonymizeIpsAmount = 2;
+    nAnonymizeMdsAmount = GetArg("-anonymizemidasamount", 0);
+    if (nAnonymizeMdsAmount > 999999) nAnonymizeMdsAmount = 999999;
+    if (nAnonymizeMdsAmount < 2) nAnonymizeMdsAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1596,7 +1596,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
     LogPrintf("Obfuscation rounds %d\n", nObfuscationRounds);
-    LogPrintf("Anonymize Midas Amount %d\n", nAnonymizeIpsAmount);
+    LogPrintf("Anonymize Midas Amount %d\n", nAnonymizeMdsAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations
@@ -1605,8 +1605,8 @@ bool AppInit2(boost::thread_group& threadGroup)
        is convertable to another.
 
        For example:
-       1Ips+1000 == (.1Ips+100)*10
-       10Ips+10000 == (1Ips+1000)*10
+       1Mds+1000 == (.1Mds+100)*10
+       10Mds+10000 == (1Mds+1000)*10
     */
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);
     obfuScationDenominations.push_back((100 * COIN) + 100000);

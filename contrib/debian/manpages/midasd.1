@@ -1,4 +1,4 @@
-.TH IpsD "1" "February 2017" "midasd 2.1.4.1"
+.TH MdssD "1" "February 2017" "midasd 2.1.4.1"
 .SH NAME
 Midas \- peer-to-peer network based digital currency
 .SH SYNOPSIS
@@ -84,10 +84,10 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'ipsaddress'\fR
+\fBgetaccount 'midasaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'ipsaddress' ['account']\fR
+\fBsetaccount 'midasaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
@@ -129,8 +129,8 @@ Returns a new midas address for receiving payments. If 'account' is specified (r
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'ipsaddress' ['minconf=1']\fR
-Returns the total amount received by 'ipsaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'midasaddress' ['minconf=1']\fR
+Returns the total amount received by 'midasaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -182,21 +182,21 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'ipsaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'ipsaddress'. This method will fail if there is less than amount Midas with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'midasaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'midasaddress'. This method will fail if there is less than amount Midas with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'ipsaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'ipsaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'midasaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'midasaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
 Stops the midas server.
 .TP
-\fBvalidateaddress 'ipsaddress'\fR
-Checks that 'ipsaddress' looks like a proper Midas address. Returns an object containing:
+\fBvalidateaddress 'midasaddress'\fR
+Checks that 'midasaddress' looks like a proper Midas address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : ipsaddress.
+    "address" : midasaddress.
 
     *note: ismine and address are only returned if the address is valid.
 

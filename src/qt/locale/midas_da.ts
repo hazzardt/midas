@@ -176,7 +176,7 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
         <translation>Midas vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -1694,10 +1694,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Midas klienten startes</translation>
     </message>
     <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</source>
-        <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/ipscoin/ipscoin-translations</translation>
+        <source>Language missing or translation incomplete? Help contributing translations here:</source>
+        <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2807,12 +2805,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uIpss og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uIps i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uIpss. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMds og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMds i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uMds. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "total at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uIpss og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uIps i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uIpss. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "total at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMds og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMds i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uMds. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Midas transactions than the network can process.</source>
@@ -3792,7 +3790,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
     </message>
     <message>
         <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 Midas.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1Ips.</translation>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1Mds.</translation>
     </message>
 </context>
 <context>
@@ -4037,7 +4035,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <source>To use midasd, or the -server option to midas-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ipsrpc
+rpcuser=midasrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4048,7 +4046,7 @@ for example: alertnotify=echo %%s | mail -s "Midas Alert" admin@foo.com
         <translation>For at bruge midasd eller -server muligheden sammen med midas-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=ipsrpc
+Rpcuser=midasrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!

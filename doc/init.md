@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy midasd.init to /etc/init.d/midasd. Test by running "service midasd start".
 
 Using this script, you can adjust the path and flags to the midasd program by
-setting the IPSD and FLAGS environment variables in the file
+setting the MIDASD and FLAGS environment variables in the file
 /etc/sysconfig/midasd. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

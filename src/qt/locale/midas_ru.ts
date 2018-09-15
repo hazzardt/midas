@@ -172,7 +172,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
         <translation>Midas сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Midas от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -1711,9 +1711,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</source>
+</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/ipscoin/ipscoin-translations</translation>
+</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>

@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2166,8 +2166,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</source>
+        <source>Language missing or translation incomplete? Help contributing translations here:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3630,12 +3629,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
     </message>
     <message>
         <location line="-165"/>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uIpss in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uMds in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uIpss in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uMds in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4990,7 +4989,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
 <context>
     <name>midas-core</name>
     <message>
-        <location filename="../ipsstrings.cpp" line="+12"/>
+        <location filename="../midasstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5239,7 +5238,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</source>
         <source>To use midasd, or the -server option to midas-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ipsrpc
+rpcuser=midasrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

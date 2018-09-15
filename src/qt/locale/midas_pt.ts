@@ -176,8 +176,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>Midas encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas Ipss contra roubo por malware infectando seu computador.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
+        <translation>Midas encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas Mds contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>

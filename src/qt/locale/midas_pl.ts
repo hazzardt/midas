@@ -1225,9 +1225,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</source>
+</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/ipscoin/ipscoin-translations </translation>
+</translation>
     </message>
     <message>
         <source>Connect to the Midas network through a SOCKS5 proxy.</source>

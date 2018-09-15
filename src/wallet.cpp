@@ -3690,9 +3690,9 @@ string CWallet::SendMoney(const CTxDestination &address, CAmount nValue, CWallet
     return "";
 }
 
-bool CWallet::IsMine(const string& ips_address)
+bool CWallet::IsMine(const string& mds_address)
 {
-    CBitcoinAddress check_address(ips_address);
+    CBitcoinAddress check_address(mds_address);
     CTxDestination dest = check_address.Get();
     isminetype mine = pwalletMain ? ::IsMine(*pwalletMain, dest) : ISMINE_NO;
 

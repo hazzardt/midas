@@ -7,6 +7,6 @@ Comment[tr]=Midas, eşten eşe kriptografik sanal para birimi
 Exec=midas-qt %u
 Terminal=false
 Type=Application
-Icon=ips128
+Icon=midas128
 MimeType=x-scheme-handler/midas;
 Categories=Office;Finance;

@@ -164,7 +164,7 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
         <translation>Midas sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella Ipsien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>

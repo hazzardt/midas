@@ -407,7 +407,7 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
             "     \"addresses\" : [          (array of string) array of midas addresses\n"
-            "     \"ipsaddress\"   	 	(string) midas address\n"
+            "     \"midasaddress\"   	 	(string) midas address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

@@ -451,7 +451,7 @@ public:
     bool IsDenominatedAmount(CAmount nInputAmount) const;
 
     isminetype IsMine(const CTxIn& txin) const;
-    bool IsMine(const string& ips_address); 
+    bool IsMine(const string& mds_address); 
     CAmount GetDebit(const CTxIn& txin, const isminefilter& filter) const;
     isminetype IsMine(const CTxOut& txout) const
     {

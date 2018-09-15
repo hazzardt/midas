@@ -213,7 +213,7 @@ void OptionsDialog::setMapper()
 
     /* Obfuscation Rounds */
     mapper->addMapping(ui->obfuscationRounds, OptionsModel::ObfuscationRounds);
-    mapper->addMapping(ui->anonymizeIps, OptionsModel::AnonymizeIpsAmount);
+    mapper->addMapping(ui->anonymizeMds, OptionsModel::AnonymizeMdsAmount);
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
 }
 

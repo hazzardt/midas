@@ -34,7 +34,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// IPSMiner
+// MidasMiner
 //
 
 //
@@ -423,7 +423,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("IPSMiner : generated block is stale");
+            return error("MidasMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -438,7 +438,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("IPSMiner : ProcessNewBlock, block not accepted");
+        return error("MidasMiner : ProcessNewBlock, block not accepted");
 
     return true;
 }
@@ -449,7 +449,7 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("IPSMiner started\n");
+    LogPrintf("MidasMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("midas-miner");
 
@@ -523,7 +523,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running IPSMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running MidasMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //

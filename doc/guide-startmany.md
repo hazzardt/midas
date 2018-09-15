@@ -137,7 +137,6 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```midasd getinfo```
 
-And compare with the official explorer at http://ipsexplorer.coin-server.com <or> dnet.presstab.pw
 
 ### Local
 

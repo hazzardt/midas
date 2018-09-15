@@ -80,8 +80,8 @@ void ObfuscationConfig::configure(bool enabled, int coins, int rounds)
     QSettings settings;
 
     settings.setValue("nObfuscationRounds", rounds);
-    settings.setValue("nAnonymizeIpsAmount", coins);
+    settings.setValue("nAnonymizeMdsAmount", coins);
 
     nObfuscationRounds = rounds;
-    nAnonymizeIpsAmount = coins;
+    nAnonymizeMdsAmount = coins;
 }

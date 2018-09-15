@@ -24,8 +24,8 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
     unitlist.append(Midas);
-    unitlist.append(mIps);
-    unitlist.append(uIps);
+    unitlist.append(mMds);
+    unitlist.append(uMds);
     return unitlist;
 }
 
@@ -33,8 +33,8 @@ bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
     case Midas:
-    case mIps:
-    case uIps:
+    case mMds:
+    case uMds:
         return true;
     default:
         return false;
@@ -46,10 +46,10 @@ QString BitcoinUnits::id(int unit)
     switch (unit) {
     case Midas:
         return QString("midas");
-    case mIps:
-        return QString("mips");
-    case uIps:
-        return QString::fromUtf8("uips");
+    case mMds:
+        return QString("mmds");
+    case uMds:
+        return QString::fromUtf8("umds");
     default:
         return QString("???");
     }
@@ -61,9 +61,9 @@ QString BitcoinUnits::name(int unit)
         switch (unit) {
         case Midas:
             return QString("Midas");
-        case mIps:
-            return QString("mIps");
-        case uIps:
+        case mMds:
+            return QString("mMidas");
+        case uMds:
             return QString::fromUtf8("μMidas");
         default:
             return QString("???");
@@ -71,11 +71,11 @@ QString BitcoinUnits::name(int unit)
     } else {
         switch (unit) {
         case Midas:
-            return QString("tIps");
-        case mIps:
-            return QString("mtIps");
-        case uIps:
-            return QString::fromUtf8("μtIps");
+            return QString("tMds");
+        case mMds:
+            return QString("mtMds");
+        case uMds:
+            return QString::fromUtf8("μtMds");
         default:
             return QString("???");
         }
@@ -88,9 +88,9 @@ QString BitcoinUnits::description(int unit)
         switch (unit) {
         case Midas:
             return QString("Midas");
-        case mIps:
+        case mMds:
             return QString("Milli-Midas (1 / 1" THIN_SP_UTF8 "000)");
-        case uIps:
+        case uMds:
             return QString("Micro-Midas (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
@@ -98,11 +98,11 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case Midas:
-            return QString("TestIpss");
-        case mIps:
-            return QString("Milli-TestIps (1 / 1" THIN_SP_UTF8 "000)");
-        case uIps:
-            return QString("Micro-TestIps (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("TestMdss");
+        case mMds:
+            return QString("Milli-TestMds (1 / 1" THIN_SP_UTF8 "000)");
+        case uMds:
+            return QString("Micro-TestMds (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -114,9 +114,9 @@ qint64 BitcoinUnits::factor(int unit)
     switch (unit) {
     case Midas:
         return 100000000;
-    case mIps:
+    case mMds:
         return 100000;
-    case uIps:
+    case uMds:
         return 100;
     default:
         return 100000000;
@@ -128,9 +128,9 @@ int BitcoinUnits::decimals(int unit)
     switch (unit) {
     case Midas:
         return 8;
-    case mIps:
+    case mMds:
         return 5;
-    case uIps:
+    case uMds:
         return 2;
     default:
         return 0;

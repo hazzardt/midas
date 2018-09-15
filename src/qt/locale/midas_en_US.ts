@@ -176,8 +176,8 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
+        <translation>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -1719,9 +1719,9 @@ Please check the address and try again.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</source>
+</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</translation>
+</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2840,12 +2840,12 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "total at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "total at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "total at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "total at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Midas transactions than the network can process.</source>
@@ -4085,7 +4085,7 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <source>To use midasd, or the -server option to midas-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ipsrpc
+rpcuser=midasrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4096,7 +4096,7 @@ for example: alertnotify=echo %%s | mail -s "Midas Alert" admin@foo.com
         <translation>To use midasd, or the -server option to midas-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ipsrpc
+rpcuser=midasrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

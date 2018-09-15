@@ -172,8 +172,8 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Ipss from being stolen by malware infecting your computer.</source>
-        <translation>Midas vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas Ipss de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mds from being stolen by malware infecting your computer.</source>
+        <translation>Midas vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas Mds de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -1611,9 +1611,9 @@ Favor verificar o endereço e tente novamente.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ipscoin/ipscoin-translations</source>
+</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/ipscoin/ipscoin-translations</translation>
+</translation>
     </message>
     <message>
         <source>Connect to the Midas network through a SOCKS5 proxy.</source>
@@ -2516,8 +2516,8 @@ https://www.transifex.com/ipscoin/ipscoin-translations</translation>
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uIpss and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uIpss in fee,&lt;br /&gt;while "at least" pays 1000 uIpss. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uIpss e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uIpss em taxa,&lt;br /&gt; pagará pelo menos 1000 uIpss. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMds and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMds in fee,&lt;br /&gt;while "at least" pays 1000 uMds. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uMds e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uMds em taxa,&lt;br /&gt; pagará pelo menos 1000 uMds. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Midas transactions than the network can process.</source>

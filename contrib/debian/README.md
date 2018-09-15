@@ -14,8 +14,8 @@ To install:
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your ipsqt binary to `/usr/bin`
-and the `../../share/pixmaps/ips128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your midasqt binary to `/usr/bin`
+and the `../../share/pixmaps/midas128.png` to `/usr/share/pixmaps`
 
 midas-qt.protocol (KDE)
 

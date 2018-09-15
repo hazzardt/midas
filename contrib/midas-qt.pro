@@ -472,7 +472,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
            src/qt/midas.cpp \
-           src/qt/ipsstrings.cpp \
+           src/qt/midasstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_ips.cpp \
+           src/test/test_midas.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/midas.qrc src/qt/ips_locale.qrc
+RESOURCES += src/qt/midas.qrc src/qt/midas_locale.qrc
 
-TRANSLATIONS += src/qt/locale/ips_bg.ts \
-                src/qt/locale/ips_de.ts \
-                src/qt/locale/ips_en.ts \
-                src/qt/locale/ips_es.ts \
-                src/qt/locale/ips_fi.ts \
-                src/qt/locale/ips_fr.ts \
-                src/qt/locale/ips_it.ts \
-                src/qt/locale/ips_ja.ts \
-                src/qt/locale/ips_pl.ts \
-                src/qt/locale/ips_pt.ts \
-                src/qt/locale/ips_ru.ts \
-                src/qt/locale/ips_sk.ts \
-                src/qt/locale/ips_sv.ts \
-                src/qt/locale/ips_vi.ts \
-                src/qt/locale/ips_zh_CN.ts \
-                src/qt/locale/ips_zh_TW.ts
+TRANSLATIONS += src/qt/locale/midas_bg.ts \
+                src/qt/locale/midas_de.ts \
+                src/qt/locale/midas_en.ts \
+                src/qt/locale/midas_es.ts \
+                src/qt/locale/midas_fi.ts \
+                src/qt/locale/midas_fr.ts \
+                src/qt/locale/midas_it.ts \
+                src/qt/locale/midas_ja.ts \
+                src/qt/locale/midas_pl.ts \
+                src/qt/locale/midas_pt.ts \
+                src/qt/locale/midas_ru.ts \
+                src/qt/locale/midas_sk.ts \
+                src/qt/locale/midas_sv.ts \
+                src/qt/locale/midas_vi.ts \
+                src/qt/locale/midas_zh_CN.ts \
+                src/qt/locale/midas_zh_TW.ts

@@ -79,11 +79,11 @@ void OptionsModel::Init()
     if (!settings.contains("nObfuscationRounds"))
         settings.setValue("nObfuscationRounds", 2);
 
-    if (!settings.contains("nAnonymizeIpsAmount"))
-        settings.setValue("nAnonymizeIpsAmount", 1000);
+    if (!settings.contains("nAnonymizeMdsAmount"))
+        settings.setValue("nAnonymizeMdsAmount", 1000);
 
     nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
-    nAnonymizeIpsAmount = settings.value("nAnonymizeIpsAmount").toLongLong();
+    nAnonymizeMdsAmount = settings.value("nAnonymizeMdsAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -150,8 +150,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nObfuscationRounds"))
         SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeIpsAmount"))
-        SoftSetArg("-anonymizeipsamount", settings.value("nAnonymizeIpsAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeMdsAmount"))
+        SoftSetArg("-anonymizemdsamount", settings.value("nAnonymizeMdsAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -231,8 +231,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case ObfuscationRounds:
             return QVariant(nObfuscationRounds);
-        case AnonymizeIpsAmount:
-            return QVariant(nAnonymizeIpsAmount);
+        case AnonymizeMdsAmount:
+            return QVariant(nAnonymizeMdsAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -341,10 +341,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nObfuscationRounds", nObfuscationRounds);
             emit obfuscationRoundsChanged(nObfuscationRounds);
             break;
-        case AnonymizeIpsAmount:
-            nAnonymizeIpsAmount = value.toInt();
-            settings.setValue("nAnonymizeIpsAmount", nAnonymizeIpsAmount);
-            emit anonymizeIpsAmountChanged(nAnonymizeIpsAmount);
+        case AnonymizeMdsAmount:
+            nAnonymizeMdsAmount = value.toInt();
+            settings.setValue("nAnonymizeMdsAmount", nAnonymizeMdsAmountt);
+            emit anonymizeMdsAmountChanged(nAnonymizeMdsAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

@@ -62,8 +62,8 @@ public:
      */
     enum Unit {
         Midas,
-        mIps,
-        uIps
+        mMds,
+        uMds
     };
 
     enum SeparatorStyle {
