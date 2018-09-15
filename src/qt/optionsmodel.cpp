@@ -343,7 +343,7 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             break;
         case AnonymizeMdsAmount:
             nAnonymizeMdsAmount = value.toInt();
-            settings.setValue("nAnonymizeMdsAmount", nAnonymizeMdsAmountt);
+            settings.setValue("nAnonymizeMdsAmount", nAnonymizeMdsAmount);
             emit anonymizeMdsAmountChanged(nAnonymizeMdsAmount);
             break;
         case CoinControlFeatures:
