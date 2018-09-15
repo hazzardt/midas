@@ -323,7 +323,7 @@ void OverviewPage::updateObfuscationProgress()
 
         // when balance is zero just show info from settings
         strAnonymizeMdsAmount = strAnonymizeMdsAmount.remove(strAnonymizeMdsAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeMdsAmountt + " / " + tr("%n Rounds", "", nObfuscationRounds);
+        strAmountAndRounds = strAnonymizeMdsAmount + " / " + tr("%n Rounds", "", nObfuscationRounds);
 
         ui->labelAmountRounds->setToolTip(tr("No inputs detected"));
         ui->labelAmountRounds->setText(strAmountAndRounds);
